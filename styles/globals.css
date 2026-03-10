@@ -3,22 +3,36 @@
 @import 'tailwindcss';
 
 @theme {
-    --background-image-noise: linear-gradient(
-            to bottom,
-            color-mix(in oklab, var(--color-neutral-950) 0%, transparent),
-            color-mix(in oklab, var(--color-neutral-950) 100%, transparent)
-        ),
-        url('/images/noise.png');
-    --color-primary: #2bdcd2;
-    --color-primary-content: #171717;
-    --color-secondary: #016968;
-    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-        'Noto Color Emoji';
+    --color-primary: #1a7a3d;
+    --color-primary-light: #2e9e54;
+    --color-primary-dark: #145e2f;
+    --color-primary-50: #f0faf3;
+    --color-primary-100: #d9f2e0;
+    --color-primary-200: #b4e5c3;
+    --color-primary-700: #1a7a3d;
+    --color-primary-800: #145e2f;
+    --color-primary-900: #0e4422;
+    --color-accent: #0d6b3f;
+    --color-surface: #ffffff;
+    --color-surface-alt: #f7faf8;
+    --color-text: #1a2e23;
+    --color-text-muted: #4a6b57;
+    --color-border: #d4e5db;
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 @layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-surface text-text;
+    }
+
     h1 {
-        @apply text-4xl font-bold tracking-tight sm:text-5xl;
+        @apply text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl;
     }
 
     h2 {
@@ -29,129 +43,81 @@
         @apply text-xl font-bold;
     }
 
-    a:not(.btn) {
-        @apply underline transition hover:opacity-80;
-    }
-
-    :not(pre) > code {
-        @apply px-1 py-0.5 font-mono rounded bg-neutral-900 text-yellow-200;
-        font-size: 0.9em;
+    h4 {
+        @apply text-lg font-semibold;
     }
 }
 
 @layer components {
-    .markdown {
-        > * {
-            @apply my-4;
-        }
-
-        :where(h1, h2) {
-            @apply mt-12 mb-6;
-        }
-
-        > :first-child {
-            @apply mt-0;
-        }
-
-        > :last-child {
-            @apply mb-0;
-        }
+    .btn {
+        @apply inline-flex items-center justify-center gap-2 font-semibold text-center no-underline transition-all cursor-pointer rounded-lg;
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
     }
 
-    .btn {
-        @apply inline-flex items-center justify-center gap-2 font-bold text-center no-underline transition-colors cursor-pointer bg-primary text-primary-content;
-        padding: var(--btn-py, 0.875rem) var(--btn-px, 1.25rem);
-        font-size: var(--btn-font-size, 0.875rem);
-        border-radius: var(--btn-border-radius, 0.25rem);
+    .btn-primary {
+        @apply bg-primary text-white shadow-md;
 
         &:hover {
-            @apply bg-primary/85;
-        }
-
-        &:disabled {
-            @apply cursor-default text-neutral-400 bg-neutral-700;
+            @apply bg-primary-light shadow-lg;
+            transform: translateY(-1px);
         }
     }
 
-    .btn-lg {
-        --btn-font-size: 1.125rem;
-        --btn-px: 1.5rem;
-        --btn-py: 1.125rem;
-    }
+    .btn-outline {
+        @apply border-2 border-primary text-primary bg-transparent;
 
-    .input {
-        @apply px-4 py-3 text-sm border rounded-sm border-neutral-300 text-neutral-900 focus:border-primary focus:outline-3 focus:outline-primary/30;
-    }
-
-    .diff {
-        direction: ltr;
-        container-type: inline-size;
-        grid-template-columns: auto 1fr;
-
-        &:focus-visible,
-        &:has(.diff-item-1:focus),
-        &:has(.diff-item-2:focus) {
-            outline: 2px solid var(--color-gray-400);
-            outline-offset: 1px;
-        }
-        &:focus-visible {
-            .diff-resizer {
-                min-width: 80cqi;
-                max-width: 80cqi;
-            }
-        }
-        &:has(.diff-item-2:focus-visible) {
-            .diff-resizer {
-                min-width: 20cqi;
-                max-width: 20cqi;
-            }
+        &:hover {
+            @apply bg-primary text-white;
         }
     }
 
-    .diff-resizer {
-        width: 50cqi;
-        max-width: calc(100cqi - 1rem);
-        transform: scaleY(3) translate(0.35rem, 0.08rem);
-        transform-origin: 100% 100%;
-        clip-path: inset(calc(100% - 0.75rem) 0 0 calc(100% - 0.75rem));
-        transition: min-width 0.3s ease-out, max-width 0.3s ease-out;
+    .section {
+        @apply py-16 sm:py-20 lg:py-24;
     }
 
-    .diff-item-2 {
-        &:after {
+    .section-alt {
+        @apply bg-surface-alt;
+    }
+
+    .container-narrow {
+        @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+    }
+
+    .card {
+        @apply bg-white rounded-xl border border-border p-6 shadow-sm transition-shadow hover:shadow-md;
+    }
+
+    .agenda-item {
+        @apply relative pl-8 pb-8 border-l-2 border-primary-200;
+
+        &:last-child {
+            @apply pb-0;
+        }
+
+        &::before {
             content: '';
-            width: 1.25rem;
-            height: 1.875rem;
-            position: absolute;
-            top: 50%;
-            right: 1px;
-            bottom: 0;
-            translate: 50% -50%;
-            background: color-mix(in oklab, var(--color-white) 50%, transparent);
-            border-radius: 9999px;
-            border: 2px solid var(--color-white);
-            backdrop-filter: blur(8px);
-            pointer-events: none;
-            z-index: 2;
-            box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--color-gray-900) 5%, transparent),
-                0 1px 3px 0 color-mix(in oklab, var(--color-gray-900) 20%, transparent);
-        }
-        @supports (-webkit-overflow-scrolling: touch) and (overflow: -webkit-paged-x) {
-            &:after {
-                content: none;
-            }
+            @apply absolute -left-2 top-1 w-3.5 h-3.5 rounded-full bg-primary border-2 border-white shadow-sm;
         }
     }
 
-    .diff-item-1,
-    .diff-item-2 {
-        > * {
-            height: 100%;
-            width: 100cqi;
-            position: absolute;
-            top: 0;
-            left: 0;
-            pointer-events: none;
+    .agenda-session {
+        @apply bg-white rounded-lg border border-border p-5 shadow-sm;
+    }
+
+    .speaker-card {
+        @apply bg-white rounded-xl border border-border p-6 text-center shadow-sm transition-shadow hover:shadow-md;
+    }
+
+    .info-card {
+        @apply bg-white rounded-lg border border-border p-5 text-center;
+    }
+
+    .nav-link {
+        @apply text-text-muted no-underline font-medium transition-colors;
+
+        &:hover {
+            @apply text-primary;
         }
     }
 }
