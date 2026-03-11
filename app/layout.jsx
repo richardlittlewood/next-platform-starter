@@ -4,8 +4,8 @@ import { Header } from '../components/header';
 
 export const metadata = {
     title: {
-        template: '%s | Netlify',
-        default: 'Netlify Starter'
+        template: '%s | Scientific Institute for Advanced Nutrition',
+        default: 'Scientific Institute for Advanced Nutrition'
     }
 };
 
