@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { Card } from 'components/card';
 import { ContextAlert } from 'components/context-alert';
@@ -20,6 +21,16 @@ export default function Page() {
     return (
         <div className="flex flex-col gap-12 sm:gap-16">
             <section>
+                <div className="flex justify-center mb-8">
+                    <Image
+                        src="/images/institute-logo.png"
+                        alt="Scientific Institute for Advanced Nutrition logo"
+                        width={180}
+                        height={180}
+                        className="rounded-full"
+                        priority
+                    />
+                </div>
                 <ContextAlert className="mb-6" />
                 <h1 className="mb-4">Netlify Platform Starter – Next.js</h1>
                 <p className="mb-6 text-lg">
