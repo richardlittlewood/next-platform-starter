@@ -10,8 +10,8 @@ export default function Page() {
                         <span className="inline-block mb-5 rounded-full bg-[#F4A259]/10 px-5 py-2 text-sm font-bold uppercase tracking-wider text-[#F4A259] border border-[#F4A259]/30">
                             Special Focus Meeting
                         </span>
-                        <h1 className="mb-8 text-4xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl leading-tight text-[#10243E]">
-                            Beta-hydroxybutyrate (BHB) in Applied Metabolic Nutrition
+                        <h1 className="mb-8 text-4xl font-medium sm:text-6xl lg:text-7xl text-[#10243E]" style={{ letterSpacing: '0.02em', lineHeight: 1.3 }}>
+                            <span className="text-[#F4A259]">Special Focus Meeting:</span>{' '}β-hydroxybutyrate (BHB) in applied metabolic nutrition
                         </h1>
                         <div className="flex flex-wrap justify-center gap-3 mb-10">
                             <span className="inline-flex items-center gap-2 rounded-full bg-[#10243E]/5 px-4 py-2 text-sm font-medium text-[#10243E] border border-[#D8E2EC]">
