@@ -76,7 +76,7 @@ export default function Page() {
         <div className="flex flex-col gap-12 sm:gap-16">
             <section>
                 <h1 className="mb-6">Research</h1>
-                <p className="text-lg text-[#9CA3AF]">
+                <p className="text-lg text-[#4a5a3c]">
                     Research is at the heart of everything we do at SIAN. Our six research groups span the full
                     spectrum of nutritional science, from molecular mechanisms to population-level interventions.
                     We are committed to producing high-quality, impactful research that advances understanding
@@ -90,7 +90,7 @@ export default function Page() {
                     {researchAreas.map((area, index) => (
                         <Card key={index} title={area.title}>
                             <p>{area.description}</p>
-                            <p className="mt-3 text-sm text-[#6B7280]">Research Lead: {area.lead}</p>
+                            <p className="mt-3 text-sm text-[#6b7b5c]">Research Lead: {area.lead}</p>
                         </Card>
                     ))}
                 </div>
@@ -100,9 +100,9 @@ export default function Page() {
                 <h2 className="mb-8">Recent Publications</h2>
                 <div className="space-y-4">
                     {recentPublications.map((pub, index) => (
-                        <div key={index} className="p-4 rounded-lg bg-white/[0.03] border border-white/5">
+                        <div key={index} className="p-4 rounded-lg bg-white/60 border border-[#28371c]/10">
                             <p className="font-medium mb-1">{pub.title}</p>
-                            <p className="text-sm text-[#6B7280]">
+                            <p className="text-sm text-[#6b7b5c]">
                                 <span className="italic">{pub.journal}</span> ({pub.year})
                             </p>
                         </div>
@@ -113,23 +113,23 @@ export default function Page() {
             <section>
                 <h2 className="mb-8">Research Facilities</h2>
                 <div className="grid gap-6 md:grid-cols-3">
-                    <div className="p-6 rounded-lg bg-white/[0.03] border border-white/5">
+                    <div className="p-6 rounded-lg bg-white/60 border border-[#28371c]/10">
                         <h3 className="mb-3">Metabolic Research Facility</h3>
-                        <p className="text-sm text-[#6B7280]">
+                        <p className="text-sm text-[#6b7b5c]">
                             A state-of-the-art facility for conducting human dietary intervention trials, equipped
                             with metabolic chambers, indirect calorimetry, and a clinical assessment suite.
                         </p>
                     </div>
-                    <div className="p-6 rounded-lg bg-white/[0.03] border border-white/5">
+                    <div className="p-6 rounded-lg bg-white/60 border border-[#28371c]/10">
                         <h3 className="mb-3">Genomics Laboratory</h3>
-                        <p className="text-sm text-[#6B7280]">
+                        <p className="text-sm text-[#6b7b5c]">
                             High-throughput sequencing and genotyping capabilities for nutrigenomics research,
                             including microbiome analysis and genome-wide association studies.
                         </p>
                     </div>
-                    <div className="p-6 rounded-lg bg-white/[0.03] border border-white/5">
+                    <div className="p-6 rounded-lg bg-white/60 border border-[#28371c]/10">
                         <h3 className="mb-3">Food Analysis Lab</h3>
-                        <p className="text-sm text-[#6B7280]">
+                        <p className="text-sm text-[#6b7b5c]">
                             Analytical chemistry laboratory for the characterisation of food composition,
                             bioactive compounds, and nutritional quality of novel ingredients.
                         </p>

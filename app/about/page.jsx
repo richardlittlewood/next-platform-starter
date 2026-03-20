@@ -9,12 +9,12 @@ export default function Page() {
         <div className="flex flex-col gap-12 sm:gap-16">
             <section>
                 <h1 className="mb-6">About SIAN</h1>
-                <p className="text-lg text-[#9CA3AF] mb-6">
+                <p className="text-lg text-[#4a5a3c] mb-6">
                     The Scientific Institute of Advanced Nutrition (SIAN) was founded in 1998 with a clear mission:
                     to advance the understanding of human nutrition through rigorous scientific research and to
                     translate that knowledge into practical, evidence-based solutions for improving public health.
                 </p>
-                <p className="text-[#9CA3AF]">
+                <p className="text-[#4a5a3c]">
                     Over more than two decades, SIAN has grown from a small research centre into one of the
                     most respected institutions in the field of nutritional science. Our interdisciplinary approach
                     brings together biochemists, clinicians, epidemiologists, and food scientists to tackle the
@@ -24,8 +24,8 @@ export default function Page() {
 
             <section>
                 <h2 className="mb-8">Our Mission</h2>
-                <div className="rounded-lg bg-white/[0.03] border border-white/5 p-8">
-                    <p className="text-lg text-[#9CA3AF] italic">
+                <div className="rounded-lg bg-white/60 border border-[#28371c]/10 p-8">
+                    <p className="text-lg text-[#4a5a3c] italic">
                         &ldquo;To advance the science of human nutrition through innovative research, to educate future
                         leaders in nutritional science and dietetics, and to improve health outcomes globally through
                         evidence-based dietary guidance and policy.&rdquo;
@@ -54,28 +54,28 @@ export default function Page() {
             <section>
                 <h2 className="mb-8">SIAN by the Numbers</h2>
                 <div className="grid gap-6 grid-cols-2 md:grid-cols-4">
-                    <div className="text-center p-6 rounded-lg bg-white/[0.03] border border-white/5">
+                    <div className="text-center p-6 rounded-lg bg-white/60 border border-[#28371c]/10">
                         <p className="text-3xl font-bold text-accent mb-2">25+</p>
-                        <p className="text-sm text-[#6B7280]">Years of Excellence</p>
+                        <p className="text-sm text-[#6b7b5c]">Years of Excellence</p>
                     </div>
-                    <div className="text-center p-6 rounded-lg bg-white/[0.03] border border-white/5">
+                    <div className="text-center p-6 rounded-lg bg-white/60 border border-[#28371c]/10">
                         <p className="text-3xl font-bold text-accent mb-2">120+</p>
-                        <p className="text-sm text-[#6B7280]">Faculty &amp; Researchers</p>
+                        <p className="text-sm text-[#6b7b5c]">Faculty &amp; Researchers</p>
                     </div>
-                    <div className="text-center p-6 rounded-lg bg-white/[0.03] border border-white/5">
+                    <div className="text-center p-6 rounded-lg bg-white/60 border border-[#28371c]/10">
                         <p className="text-3xl font-bold text-accent mb-2">3,500+</p>
-                        <p className="text-sm text-[#6B7280]">Graduates</p>
+                        <p className="text-sm text-[#6b7b5c]">Graduates</p>
                     </div>
-                    <div className="text-center p-6 rounded-lg bg-white/[0.03] border border-white/5">
+                    <div className="text-center p-6 rounded-lg bg-white/60 border border-[#28371c]/10">
                         <p className="text-3xl font-bold text-accent mb-2">800+</p>
-                        <p className="text-sm text-[#6B7280]">Published Studies</p>
+                        <p className="text-sm text-[#6b7b5c]">Published Studies</p>
                     </div>
                 </div>
             </section>
 
             <section>
                 <h2 className="mb-6">Our History</h2>
-                <div className="space-y-6 text-[#9CA3AF]">
+                <div className="space-y-6 text-[#4a5a3c]">
                     <div className="flex gap-4">
                         <span className="text-accent font-bold whitespace-nowrap">1998</span>
                         <p>SIAN founded as a specialist research unit within the Cambridge Centre for Biomedical Sciences.</p>

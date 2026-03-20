@@ -4,24 +4,24 @@ export default function Page() {
     return (
         <div>
             {/* Hero Section */}
-            <section className="relative overflow-hidden bg-gradient-to-br from-[#0B0E14] via-[#0F1318] to-[#101820] py-20 sm:py-32">
+            <section className="relative overflow-hidden bg-[#28371c] py-20 sm:py-32">
                 <div className="section-container relative z-10">
                     <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
                         <div>
-                            <h1 className="mb-6 text-3xl font-extrabold tracking-tight sm:text-5xl leading-tight text-[#F0F2F5]">
+                            <h1 className="mb-6 text-3xl font-extrabold tracking-tight sm:text-5xl leading-tight text-white">
                                 Special Focus Meeting: Beta-hydroxybutyrate (BHB) in Applied Metabolic Nutrition
                             </h1>
                             <div className="flex flex-wrap gap-3 mb-8">
-                                <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-sm font-medium backdrop-blur-sm border border-white/10">
-                                    <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
+                                <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm border border-white/15">
+                                    <svg className="w-4 h-4 text-[#cbfcff]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
                                     8 June 2026
                                 </span>
-                                <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-sm font-medium backdrop-blur-sm border border-white/10">
-                                    <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
+                                <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm border border-white/15">
+                                    <svg className="w-4 h-4 text-[#cbfcff]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
                                     Afternoon session from 15:00 CEST
                                 </span>
-                                <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-sm font-medium backdrop-blur-sm border border-white/10">
-                                    <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><circle cx="12" cy="11" r="3" /></svg>
+                                <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm border border-white/15">
+                                    <svg className="w-4 h-4 text-[#cbfcff]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><circle cx="12" cy="11" r="3" /></svg>
                                     Spain (On-site) &middot; Hybrid Online
                                 </span>
                             </div>
@@ -32,26 +32,26 @@ export default function Page() {
                         </div>
                         <div className="hidden lg:flex justify-center">
                             <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="opacity-30">
-                                <circle cx="160" cy="160" r="80" stroke="#00FFB2" strokeWidth="1" />
-                                <circle cx="160" cy="160" r="120" stroke="#00FFB2" strokeWidth="0.5" />
-                                <circle cx="160" cy="160" r="155" stroke="#00FFB2" strokeWidth="0.3" />
-                                <circle cx="160" cy="80" r="8" fill="#00FFB2" opacity="0.6" />
-                                <circle cx="230" cy="130" r="6" fill="#00FFB2" opacity="0.5" />
-                                <circle cx="230" cy="190" r="7" fill="#00FFB2" opacity="0.4" />
-                                <circle cx="160" cy="240" r="8" fill="#00FFB2" opacity="0.6" />
-                                <circle cx="90" cy="190" r="6" fill="#00FFB2" opacity="0.5" />
-                                <circle cx="90" cy="130" r="7" fill="#00FFB2" opacity="0.4" />
-                                <circle cx="120" cy="100" r="5" fill="#00FFB2" opacity="0.3" />
-                                <circle cx="200" cy="220" r="5" fill="#00FFB2" opacity="0.3" />
-                                <line x1="160" y1="80" x2="230" y2="130" stroke="#00FFB2" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="230" y1="130" x2="230" y2="190" stroke="#00FFB2" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="230" y1="190" x2="160" y2="240" stroke="#00FFB2" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="160" y1="240" x2="90" y2="190" stroke="#00FFB2" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="90" y1="190" x2="90" y2="130" stroke="#00FFB2" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="90" y1="130" x2="160" y2="80" stroke="#00FFB2" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="160" y1="80" x2="160" y2="240" stroke="#00FFB2" strokeWidth="0.3" opacity="0.3" />
-                                <line x1="90" y1="130" x2="230" y2="190" stroke="#00FFB2" strokeWidth="0.3" opacity="0.3" />
-                                <line x1="230" y1="130" x2="90" y2="190" stroke="#00FFB2" strokeWidth="0.3" opacity="0.3" />
+                                <circle cx="160" cy="160" r="80" stroke="#cbfcff" strokeWidth="1" />
+                                <circle cx="160" cy="160" r="120" stroke="#cbfcff" strokeWidth="0.5" />
+                                <circle cx="160" cy="160" r="155" stroke="#cbfcff" strokeWidth="0.3" />
+                                <circle cx="160" cy="80" r="8" fill="#fa4f28" opacity="0.6" />
+                                <circle cx="230" cy="130" r="6" fill="#cbfcff" opacity="0.5" />
+                                <circle cx="230" cy="190" r="7" fill="#fa4f28" opacity="0.4" />
+                                <circle cx="160" cy="240" r="8" fill="#cbfcff" opacity="0.6" />
+                                <circle cx="90" cy="190" r="6" fill="#fa4f28" opacity="0.5" />
+                                <circle cx="90" cy="130" r="7" fill="#cbfcff" opacity="0.4" />
+                                <circle cx="120" cy="100" r="5" fill="#fa4f28" opacity="0.3" />
+                                <circle cx="200" cy="220" r="5" fill="#cbfcff" opacity="0.3" />
+                                <line x1="160" y1="80" x2="230" y2="130" stroke="#cbfcff" strokeWidth="0.5" opacity="0.4" />
+                                <line x1="230" y1="130" x2="230" y2="190" stroke="#cbfcff" strokeWidth="0.5" opacity="0.4" />
+                                <line x1="230" y1="190" x2="160" y2="240" stroke="#cbfcff" strokeWidth="0.5" opacity="0.4" />
+                                <line x1="160" y1="240" x2="90" y2="190" stroke="#cbfcff" strokeWidth="0.5" opacity="0.4" />
+                                <line x1="90" y1="190" x2="90" y2="130" stroke="#cbfcff" strokeWidth="0.5" opacity="0.4" />
+                                <line x1="90" y1="130" x2="160" y2="80" stroke="#cbfcff" strokeWidth="0.5" opacity="0.4" />
+                                <line x1="160" y1="80" x2="160" y2="240" stroke="#cbfcff" strokeWidth="0.3" opacity="0.3" />
+                                <line x1="90" y1="130" x2="230" y2="190" stroke="#cbfcff" strokeWidth="0.3" opacity="0.3" />
+                                <line x1="230" y1="130" x2="90" y2="190" stroke="#cbfcff" strokeWidth="0.3" opacity="0.3" />
                             </svg>
                         </div>
                     </div>
@@ -59,10 +59,10 @@ export default function Page() {
             </section>
 
             {/* About SIAN */}
-            <section id="about-sian" className="py-20 sm:py-28 bg-[#0D1017]">
+            <section id="about-sian" className="py-20 sm:py-28 bg-[#fcfbd4]">
                 <div className="section-container">
-                    <h2 className="text-3xl font-bold mb-4 text-center sm:text-4xl text-[#F0F2F5]">About SIAN</h2>
-                    <p className="text-center text-[#9CA3AF] max-w-3xl mx-auto mb-12 text-lg">
+                    <h2 className="text-3xl font-bold mb-4 text-center sm:text-4xl text-[#28371c]">About SIAN</h2>
+                    <p className="text-center text-[#4a5a3c] max-w-3xl mx-auto mb-12 text-lg">
                         The Scientific Institute for Advanced Nutrition is an independent body committed to advancing evidence-based metabolic nutrition through rigorous science and clinical translation.
                     </p>
                     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -83,19 +83,19 @@ export default function Page() {
             </section>
 
             {/* About the Meeting */}
-            <section id="about-meeting" className="py-20 sm:py-28 bg-[#0B0E14]">
+            <section id="about-meeting" className="py-20 sm:py-28 bg-[#f5f4c8]">
                 <div className="section-container">
-                    <h2 className="text-3xl font-bold mb-12 text-center sm:text-4xl text-[#F0F2F5]">About the Meeting</h2>
+                    <h2 className="text-3xl font-bold mb-12 text-center sm:text-4xl text-[#28371c]">About the Meeting</h2>
                     <div className="grid gap-8 lg:grid-cols-3">
-                        <div className="rounded-lg bg-white/[0.03] p-8 border border-white/5">
-                            <h3 className="text-xl font-bold mb-4 text-[#F0F2F5]">Scientific Rationale</h3>
-                            <p className="text-[#9CA3AF] leading-relaxed">
+                        <div className="rounded-lg bg-white/60 p-8 border border-[#28371c]/10">
+                            <h3 className="text-xl font-bold mb-4 text-[#28371c]">Scientific Rationale</h3>
+                            <p className="text-[#4a5a3c] leading-relaxed">
                                 Beta-hydroxybutyrate (BHB) has emerged as a molecule of significant clinical interest beyond its role as an energy substrate. This meeting convenes leading investigators to evaluate the current evidence base, identify knowledge gaps, and set priorities for rigorous clinical research in metabolic nutrition.
                             </p>
                         </div>
-                        <div className="rounded-lg bg-white/[0.03] p-8 border border-white/5">
-                            <h3 className="text-xl font-bold mb-4 text-[#F0F2F5]">Intended Audience</h3>
-                            <ul className="space-y-2 text-[#9CA3AF]">
+                        <div className="rounded-lg bg-white/60 p-8 border border-[#28371c]/10">
+                            <h3 className="text-xl font-bold mb-4 text-[#28371c]">Intended Audience</h3>
+                            <ul className="space-y-2 text-[#4a5a3c]">
                                 <li className="flex items-start gap-2">
                                     <span className="text-accent mt-1">&bull;</span>
                                     Clinicians and metabolic medicine specialists
@@ -118,9 +118,9 @@ export default function Page() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="rounded-lg bg-white/[0.03] p-8 border border-white/5">
-                            <h3 className="text-xl font-bold mb-4 text-[#F0F2F5]">Key Themes</h3>
-                            <ul className="space-y-2 text-[#9CA3AF]">
+                        <div className="rounded-lg bg-white/60 p-8 border border-[#28371c]/10">
+                            <h3 className="text-xl font-bold mb-4 text-[#28371c]">Key Themes</h3>
+                            <ul className="space-y-2 text-[#4a5a3c]">
                                 <li className="flex items-start gap-2">
                                     <span className="text-accent mt-1">&bull;</span>
                                     Standards and worldwide regulation of BHB
@@ -144,9 +144,9 @@ export default function Page() {
             </section>
 
             {/* Programme at a Glance */}
-            <section id="programme" className="py-20 sm:py-28 bg-[#0D1017]">
+            <section id="programme" className="py-20 sm:py-28 bg-[#fcfbd4]">
                 <div className="section-container">
-                    <h2 className="text-3xl font-bold mb-12 text-center sm:text-4xl text-[#F0F2F5]">Programme at a Glance</h2>
+                    <h2 className="text-3xl font-bold mb-12 text-center sm:text-4xl text-[#28371c]">Programme at a Glance</h2>
                     <div className="space-y-6 max-w-3xl mx-auto">
                         <ProgrammeItem badge="Keynote" badgeClass="badge-keynote" title="Past, Present and Future: The BHB Journey">
                             Opening keynote tracing the historical development of BHB research to current clinical applications and future directions.
@@ -171,13 +171,13 @@ export default function Page() {
             </section>
 
             {/* Faculty */}
-            <section id="faculty" className="py-20 sm:py-28 bg-[#0B0E14]">
+            <section id="faculty" className="py-20 sm:py-28 bg-[#f5f4c8]">
                 <div className="section-container">
-                    <h2 className="text-3xl font-bold mb-12 text-center sm:text-4xl text-[#F0F2F5]">Faculty</h2>
+                    <h2 className="text-3xl font-bold mb-12 text-center sm:text-4xl text-[#28371c]">Faculty</h2>
 
                     {/* Meeting Chairs */}
                     <div className="mb-12">
-                        <h3 className="text-xl font-bold mb-6 text-accent uppercase tracking-wider text-center">Meeting Chairs</h3>
+                        <h3 className="text-xl font-bold mb-6 text-[#fa4f28] uppercase tracking-wider text-center">Meeting Chairs</h3>
                         <div className="grid gap-6 sm:grid-cols-2">
                             <FacultyCard name="R. Littlewood" credentials="MA MBA MD" role="Europe Chair" description="Medical Doctor; Inventor of Klario" focus="Clinical applications & regulatory vision for BHB" />
                             <FacultyCard name="Dr. J. Tsubota" role="Japan Chair" description="International metabolic nutrition" />
@@ -186,7 +186,7 @@ export default function Page() {
 
                     {/* Session Faculty */}
                     <div>
-                        <h3 className="text-xl font-bold mb-6 text-accent uppercase tracking-wider text-center">Session Faculty</h3>
+                        <h3 className="text-xl font-bold mb-6 text-[#fa4f28] uppercase tracking-wider text-center">Session Faculty</h3>
                         <div className="grid gap-6 sm:grid-cols-2">
                             <FacultyCard name="G. Myers" role="CEO, Flow Health Science" description="Global BHB regulatory landscape" />
                             <FacultyCard name="Prof. Dr. David Russell-Jones" role="United Kingdom" description="BHB evidence in diabetes management" />
@@ -197,53 +197,53 @@ export default function Page() {
             </section>
 
             {/* Venue & Format */}
-            <section id="venue" className="py-20 sm:py-28 bg-[#0D1017]">
+            <section id="venue" className="py-20 sm:py-28 bg-[#fcfbd4]">
                 <div className="section-container">
-                    <h2 className="text-3xl font-bold mb-12 text-center sm:text-4xl text-[#F0F2F5]">Venue & Format</h2>
+                    <h2 className="text-3xl font-bold mb-12 text-center sm:text-4xl text-[#28371c]">Venue & Format</h2>
                     <div className="grid gap-8 md:grid-cols-2">
-                        <div className="rounded-lg bg-white/[0.03] p-8 backdrop-blur-sm border border-white/5">
-                            <h3 className="text-xl font-bold mb-6 text-accent">In-Person</h3>
-                            <ul className="space-y-4 text-[#9CA3AF]">
+                        <div className="rounded-lg bg-white/60 p-8 backdrop-blur-sm border border-[#28371c]/10">
+                            <h3 className="text-xl font-bold mb-6 text-[#fa4f28]">In-Person</h3>
+                            <ul className="space-y-4 text-[#4a5a3c]">
                                 <li className="flex items-start gap-3">
                                     <svg className="w-5 h-5 text-accent mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><circle cx="12" cy="11" r="3" /></svg>
-                                    <div><strong className="text-[#F0F2F5]">Location:</strong> Spain (exact venue to be confirmed)</div>
+                                    <div><strong className="text-[#28371c]">Location:</strong> Spain (exact venue to be confirmed)</div>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <svg className="w-5 h-5 text-accent mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
-                                    <div><strong className="text-[#F0F2F5]">Date:</strong> 8 June 2026, afternoon session</div>
+                                    <div><strong className="text-[#28371c]">Date:</strong> 8 June 2026, afternoon session</div>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <svg className="w-5 h-5 text-accent mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
-                                    <div><strong className="text-[#F0F2F5]">Time zone:</strong> CEST (Central European Summer Time, UTC+2)</div>
+                                    <div><strong className="text-[#28371c]">Time zone:</strong> CEST (Central European Summer Time, UTC+2)</div>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <svg className="w-5 h-5 text-accent mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M12 6v6l4 2" /><circle cx="12" cy="12" r="10" /></svg>
-                                    <div><strong className="text-[#F0F2F5]">Start:</strong> 15:00 CEST</div>
+                                    <div><strong className="text-[#28371c]">Start:</strong> 15:00 CEST</div>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <svg className="w-5 h-5 text-accent mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4-4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" /></svg>
-                                    <div><strong className="text-[#F0F2F5]">Access:</strong> By invitation, limited capacity</div>
+                                    <div><strong className="text-[#28371c]">Access:</strong> By invitation, limited capacity</div>
                                 </li>
                             </ul>
                         </div>
-                        <div className="rounded-lg bg-white/[0.03] p-8 backdrop-blur-sm border border-white/5">
-                            <h3 className="text-xl font-bold mb-6 text-accent">Online Participation</h3>
-                            <ul className="space-y-4 text-[#9CA3AF]">
+                        <div className="rounded-lg bg-white/60 p-8 backdrop-blur-sm border border-[#28371c]/10">
+                            <h3 className="text-xl font-bold mb-6 text-[#fa4f28]">Online Participation</h3>
+                            <ul className="space-y-4 text-[#4a5a3c]">
                                 <li className="flex items-start gap-3">
                                     <svg className="w-5 h-5 text-accent mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" /></svg>
-                                    <div><strong className="text-[#F0F2F5]">Format:</strong> Live-streamed via secure conference platform</div>
+                                    <div><strong className="text-[#28371c]">Format:</strong> Live-streamed via secure conference platform</div>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <svg className="w-5 h-5 text-accent mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" /></svg>
-                                    <div><strong className="text-[#F0F2F5]">Interaction:</strong> Full participation including Q&amp;A</div>
+                                    <div><strong className="text-[#28371c]">Interaction:</strong> Full participation including Q&amp;A</div>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <svg className="w-5 h-5 text-accent mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="10" /><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" /></svg>
-                                    <div><strong className="text-[#F0F2F5]">Time zones:</strong> Optimised for Europe, with accessibility for Japan (evening) and US East Coast (morning)</div>
+                                    <div><strong className="text-[#28371c]">Time zones:</strong> Optimised for Europe, with accessibility for Japan (evening) and US East Coast (morning)</div>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <svg className="w-5 h-5 text-accent mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                                    <div><strong className="text-[#F0F2F5]">Access:</strong> By registration; connection details provided upon confirmation</div>
+                                    <div><strong className="text-[#28371c]">Access:</strong> By registration; connection details provided upon confirmation</div>
                                 </li>
                             </ul>
                         </div>
@@ -252,14 +252,14 @@ export default function Page() {
             </section>
 
             {/* Registration & Contact */}
-            <section id="registration" className="py-20 sm:py-28 bg-gradient-to-br from-[#0B0E14] via-[#0F1318] to-[#101820]">
+            <section id="registration" className="py-20 sm:py-28 bg-[#f5f4c8]">
                 <div className="section-container">
                     <div className="text-center mb-10">
-                        <h2 className="text-3xl font-bold mb-6 sm:text-4xl text-[#F0F2F5]">Register Your Interest</h2>
-                        <p className="text-[#9CA3AF] text-lg max-w-2xl mx-auto mb-4">
+                        <h2 className="text-3xl font-bold mb-6 sm:text-4xl text-[#28371c]">Register Your Interest</h2>
+                        <p className="text-[#4a5a3c] text-lg max-w-2xl mx-auto mb-4">
                             This Special Focus Meeting is by invitation with limited capacity.
                         </p>
-                        <p className="text-[#9CA3AF] max-w-2xl mx-auto">
+                        <p className="text-[#4a5a3c] max-w-2xl mx-auto">
                             Complete the form below to register your interest. You will receive further details including programme updates, venue logistics, and formal invitations as they become available.
                         </p>
                     </div>
@@ -281,43 +281,43 @@ function PillarCard({ icon, title, children }) {
     };
 
     return (
-        <div className="rounded-lg bg-white/[0.03] p-6 text-center backdrop-blur-sm border border-white/5 hover:border-accent/20 transition-colors">
+        <div className="rounded-lg bg-white/60 p-6 text-center backdrop-blur-sm border border-[#28371c]/10 hover:border-[#fa4f28]/30 transition-colors">
             <div className="text-accent mb-4 flex justify-center">{icons[icon]}</div>
-            <h3 className="text-lg font-bold mb-2 text-[#F0F2F5]">{title}</h3>
-            <p className="text-sm text-[#9CA3AF]">{children}</p>
+            <h3 className="text-lg font-bold mb-2 text-[#28371c]">{title}</h3>
+            <p className="text-sm text-[#4a5a3c]">{children}</p>
         </div>
     );
 }
 
 function ProgrammeItem({ badge, badgeClass, title, children }) {
     return (
-        <div className="rounded-lg bg-white/[0.03] p-6 border border-white/5 hover:border-accent/20 transition-colors">
+        <div className="rounded-lg bg-white/60 p-6 border border-[#28371c]/10 hover:border-[#fa4f28]/30 transition-colors">
             <div className="mb-3">
                 <span className={`badge ${badgeClass}`}>{badge}</span>
             </div>
-            <h3 className="text-lg font-bold mb-2 text-[#F0F2F5]">{title}</h3>
-            <p className="text-[#9CA3AF] text-sm">{children}</p>
+            <h3 className="text-lg font-bold mb-2 text-[#28371c]">{title}</h3>
+            <p className="text-[#4a5a3c] text-sm">{children}</p>
         </div>
     );
 }
 
 function FacultyCard({ name, credentials, role, description, focus }) {
     return (
-        <div className="rounded-lg bg-white/[0.03] p-6 border border-white/5 hover:border-accent/20 transition-colors">
+        <div className="rounded-lg bg-white/60 p-6 border border-[#28371c]/10 hover:border-[#fa4f28]/30 transition-colors">
             <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent font-bold text-sm border border-accent/20">
+                <div className="w-10 h-10 rounded-full bg-[#fa4f28]/10 flex items-center justify-center text-[#fa4f28] font-bold text-sm border border-[#fa4f28]/20">
                     {name.charAt(0)}
                 </div>
                 <div>
-                    <h4 className="font-bold text-[#F0F2F5]">
+                    <h4 className="font-bold text-[#28371c]">
                         {name}
-                        {credentials && <span className="text-[#9CA3AF] font-normal text-sm ml-1">({credentials})</span>}
+                        {credentials && <span className="text-[#4a5a3c] font-normal text-sm ml-1">({credentials})</span>}
                     </h4>
-                    {role && <p className="text-xs text-[#6B7280]">{role}</p>}
+                    {role && <p className="text-xs text-[#6b7b5c]">{role}</p>}
                 </div>
             </div>
-            <p className="text-sm text-[#9CA3AF]">{description}</p>
-            {focus && <p className="text-xs text-accent mt-2 font-medium">{focus}</p>}
+            <p className="text-sm text-[#4a5a3c]">{description}</p>
+            {focus && <p className="text-xs text-[#fa4f28] mt-2 font-medium">{focus}</p>}
         </div>
     );
 }

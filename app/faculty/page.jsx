@@ -60,7 +60,7 @@ export default function Page() {
         <div className="flex flex-col gap-12 sm:gap-16">
             <section>
                 <h1 className="mb-6">Our Faculty</h1>
-                <p className="text-lg text-[#9CA3AF]">
+                <p className="text-lg text-[#4a5a3c]">
                     SIAN&apos;s faculty members are internationally recognised experts in their respective fields. Our team
                     of researchers, educators, and clinicians brings together a wealth of experience across all
                     areas of nutritional science.

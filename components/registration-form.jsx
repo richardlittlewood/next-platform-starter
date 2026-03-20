@@ -37,26 +37,26 @@ export function RegistrationForm() {
             <input type="hidden" name="form-name" value="registration" />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                    <label htmlFor="reg-name" className="block text-sm font-medium text-[#9CA3AF] mb-1">Full Name *</label>
+                    <label htmlFor="reg-name" className="block text-sm font-medium text-[#4a5a3c] mb-1">Full Name *</label>
                     <input id="reg-name" name="name" type="text" placeholder="Dr. Jane Smith" required className="input w-full" />
                 </div>
                 <div>
-                    <label htmlFor="reg-email" className="block text-sm font-medium text-[#9CA3AF] mb-1">Email Address *</label>
+                    <label htmlFor="reg-email" className="block text-sm font-medium text-[#4a5a3c] mb-1">Email Address *</label>
                     <input id="reg-email" name="email" type="email" placeholder="jane.smith@example.com" required className="input w-full" />
                 </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                    <label htmlFor="reg-organisation" className="block text-sm font-medium text-[#9CA3AF] mb-1">Organisation / Affiliation *</label>
+                    <label htmlFor="reg-organisation" className="block text-sm font-medium text-[#4a5a3c] mb-1">Organisation / Affiliation *</label>
                     <input id="reg-organisation" name="organisation" type="text" placeholder="University of..." required className="input w-full" />
                 </div>
                 <div>
-                    <label htmlFor="reg-role" className="block text-sm font-medium text-[#9CA3AF] mb-1">Role / Position</label>
+                    <label htmlFor="reg-role" className="block text-sm font-medium text-[#4a5a3c] mb-1">Role / Position</label>
                     <input id="reg-role" name="role" type="text" placeholder="e.g. Professor, Researcher" className="input w-full" />
                 </div>
             </div>
             <div>
-                <label htmlFor="reg-attendance" className="block text-sm font-medium text-[#9CA3AF] mb-1">Preferred Attendance *</label>
+                <label htmlFor="reg-attendance" className="block text-sm font-medium text-[#4a5a3c] mb-1">Preferred Attendance *</label>
                 <select id="reg-attendance" name="attendance" required className="input w-full">
                     <option value="">Select an option</option>
                     <option value="in-person">In-Person (Bilbao, Spain)</option>
@@ -65,7 +65,7 @@ export function RegistrationForm() {
                 </select>
             </div>
             <div>
-                <label htmlFor="reg-message" className="block text-sm font-medium text-[#9CA3AF] mb-1">Additional Comments</label>
+                <label htmlFor="reg-message" className="block text-sm font-medium text-[#4a5a3c] mb-1">Additional Comments</label>
                 <textarea id="reg-message" name="message" rows={3} placeholder="Any questions or additional information..." className="input w-full resize-y" />
             </div>
             <button className="btn btn-lg w-full sm:w-auto sm:self-center mt-2" type="submit" disabled={status === 'pending'}>

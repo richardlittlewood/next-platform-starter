@@ -55,7 +55,7 @@ export default function Page() {
         <div className="flex flex-col gap-12 sm:gap-16">
             <section>
                 <h1 className="mb-6">Academic Programs</h1>
-                <p className="text-lg text-[#9CA3AF]">
+                <p className="text-lg text-[#4a5a3c]">
                     SIAN offers a range of undergraduate, postgraduate, and professional development programmes
                     in nutritional science. All programmes are designed to combine rigorous scientific training
                     with practical, real-world application.
@@ -65,11 +65,11 @@ export default function Page() {
             <section className="flex flex-col gap-6">
                 {programs.map((program, index) => (
                     <Card key={index} title={program.title}>
-                        <p className="text-sm text-[#6B7280] -mt-2 mb-2">{program.duration}</p>
+                        <p className="text-sm text-[#6b7b5c] -mt-2 mb-2">{program.duration}</p>
                         <p>{program.description}</p>
                         <ul className="mt-3 space-y-1">
                             {program.highlights.map((highlight, i) => (
-                                <li key={i} className="flex items-start gap-2 text-sm text-[#6B7280]">
+                                <li key={i} className="flex items-start gap-2 text-sm text-[#6b7b5c]">
                                     <span className="text-accent mt-0.5">&bull;</span>
                                     {highlight}
                                 </li>
@@ -79,9 +79,9 @@ export default function Page() {
                 ))}
             </section>
 
-            <section className="text-center py-8 px-6 rounded-lg bg-white/[0.03] border border-white/5">
+            <section className="text-center py-8 px-6 rounded-lg bg-white/60 border border-[#28371c]/10">
                 <h2 className="mb-4">Interested in Applying?</h2>
-                <p className="mb-6 text-[#9CA3AF] max-w-2xl mx-auto">
+                <p className="mb-6 text-[#4a5a3c] max-w-2xl mx-auto">
                     Contact our admissions team to learn more about entry requirements, funding opportunities,
                     and application deadlines for our programmes.
                 </p>
