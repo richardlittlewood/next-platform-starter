@@ -15,7 +15,7 @@ export function Header() {
             <nav className="flex flex-wrap items-center gap-4 py-3 sm:py-4 section-container">
                 <Link href="/" className="flex items-center gap-4 no-underline hover:opacity-90">
                     <img src="/images/sian-logo-circular.png" alt="SIAN" width="72" height="72" className="rounded-full object-cover" style={{ background: 'transparent' }} />
-                    <span className="text-lg font-semibold tracking-tight sm:text-2xl lg:text-3xl text-[#10243E] leading-tight whitespace-nowrap" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Scientific Institute for Advanced Nutrition</span>
+                    <span className="text-lg font-semibold tracking-tight sm:text-2xl lg:text-3xl text-[#10243E] leading-tight whitespace-nowrap" style={{ fontFamily: "var(--font-heading)" }}>Scientific Institute for Advanced Nutrition</span>
                 </Link>
                 {!!navItems?.length && (
                     <ul className="flex flex-wrap gap-x-4 gap-y-1 ml-auto">
