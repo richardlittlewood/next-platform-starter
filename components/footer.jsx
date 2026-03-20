@@ -1,37 +1,42 @@
-import Link from 'next/link';
-
 export function Footer() {
     return (
-        <footer className="pt-16 pb-12 sm:pt-24 sm:pb-16">
-            <div className="grid gap-8 sm:grid-cols-3">
-                <div>
-                    <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-primary">SIAN</h3>
-                    <p className="text-sm text-blue-200">
-                        Scientific Institute of Advanced Nutrition. Advancing the science of human nutrition
-                        through research, education, and community engagement.
+        <footer className="bg-[#060e1a] py-12 sm:py-16">
+            <div className="section-container">
+                <div className="grid gap-8 sm:grid-cols-3">
+                    <div>
+                        <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-primary">SIAN</h3>
+                        <p className="text-sm text-blue-200">
+                            Scientific Institute for Advanced Nutrition. Advancing evidence-based metabolic nutrition through rigorous science, independent research, and clinical translation.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-primary">Quick Links</h3>
+                        <ul className="space-y-2 text-sm">
+                            <li><a href="#about-sian" className="no-underline text-blue-200 hover:text-white transition-colors">About SIAN</a></li>
+                            <li><a href="#about-meeting" className="no-underline text-blue-200 hover:text-white transition-colors">About the Meeting</a></li>
+                            <li><a href="#programme" className="no-underline text-blue-200 hover:text-white transition-colors">Scientific Programme</a></li>
+                            <li><a href="#faculty" className="no-underline text-blue-200 hover:text-white transition-colors">Faculty</a></li>
+                            <li><a href="#registration" className="no-underline text-blue-200 hover:text-white transition-colors">Registration & Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-primary">Policies & Disclosures</h3>
+                        <ul className="space-y-2 text-sm text-blue-300">
+                            <li>Privacy Policy (coming soon)</li>
+                            <li>Conflict of Interest Policy (coming soon)</li>
+                            <li>Faculty Disclosures (coming soon)</li>
+                            <li>Terms of Use (coming soon)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="mt-8 pt-6 border-t border-white/10 text-center">
+                    <p className="text-sm text-blue-300">
+                        &copy; {new Date().getFullYear()} Scientific Institute for Advanced Nutrition (SIAN). All rights reserved.
+                    </p>
+                    <p className="text-xs text-blue-400 mt-2">
+                        BHB Special Focus Meeting &middot; 8 June 2026 &middot; Spain (Hybrid)
                     </p>
                 </div>
-                <div>
-                    <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-primary">Quick Links</h3>
-                    <ul className="space-y-2 text-sm">
-                        <li><Link href="/about" className="decoration-dashed text-blue-200 underline-offset-4 hover:text-white">About Us</Link></li>
-                        <li><Link href="/programs" className="decoration-dashed text-blue-200 underline-offset-4 hover:text-white">Programs</Link></li>
-                        <li><Link href="/research" className="decoration-dashed text-blue-200 underline-offset-4 hover:text-white">Research</Link></li>
-                        <li><Link href="/faculty" className="decoration-dashed text-blue-200 underline-offset-4 hover:text-white">Faculty</Link></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-primary">Contact</h3>
-                    <ul className="space-y-2 text-sm text-blue-200">
-                        <li>123 Nutrition Science Drive</li>
-                        <li>Cambridge, CB2 1TN, UK</li>
-                        <li>info@sian-institute.ac.uk</li>
-                        <li>+44 (0)1234 567890</li>
-                    </ul>
-                </div>
-            </div>
-            <div className="mt-8 pt-6 border-t border-blue-800 text-center text-sm text-blue-300">
-                &copy; {new Date().getFullYear()} Scientific Institute of Advanced Nutrition. All rights reserved.
             </div>
         </footer>
     );

@@ -1,17 +1,17 @@
 import Link from 'next/link';
 
 const navItems = [
-    { linkText: 'Home', href: '/' },
-    { linkText: 'About', href: '/about' },
-    { linkText: 'Programs', href: '/programs' },
-    { linkText: 'Research', href: '/research' },
-    { linkText: 'Faculty', href: '/faculty' },
-    { linkText: 'Contact', href: '/contact' }
+    { linkText: 'About SIAN', href: '#about-sian' },
+    { linkText: 'About the Meeting', href: '#about-meeting' },
+    { linkText: 'Scientific Programme', href: '#programme' },
+    { linkText: 'Faculty', href: '#faculty' },
+    { linkText: 'Venue & Format', href: '#venue' },
+    { linkText: 'Registration & Contact', href: '#registration' }
 ];
 
 export function Header() {
     return (
-        <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
+        <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-16 section-container">
             <Link href="/" className="flex items-center gap-3 no-underline hover:opacity-90">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <circle cx="18" cy="18" r="17" stroke="#2bdcd2" strokeWidth="2" />
@@ -23,9 +23,9 @@ export function Header() {
                 <ul className="flex flex-wrap gap-x-4 gap-y-1">
                     {navItems.map((item, index) => (
                         <li key={index}>
-                            <Link href={item.href} className="inline-flex px-1.5 py-1 sm:px-3 sm:py-2">
+                            <a href={item.href} className="inline-flex px-1.5 py-1 sm:px-3 sm:py-2 text-sm no-underline hover:text-primary transition-colors">
                                 {item.linkText}
-                            </Link>
+                            </a>
                         </li>
                     ))}
                 </ul>

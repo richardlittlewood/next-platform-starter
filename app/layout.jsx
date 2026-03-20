@@ -5,10 +5,10 @@ import { Header } from '../components/header';
 export const metadata = {
     title: {
         template: '%s | SIAN',
-        default: 'Scientific Institute of Advanced Nutrition'
+        default: 'SIAN BHB Meeting 2026 – Special Focus Meeting'
     },
     description:
-        'The Scientific Institute of Advanced Nutrition (SIAN) is a leading research and education institution dedicated to advancing the science of human nutrition and promoting evidence-based dietary practices.'
+        'Special Focus Meeting: Beta-hydroxybutyrate (BHB) in Applied Metabolic Nutrition. 8 June 2026, Spain (Hybrid Online). Organised by the Scientific Institute for Advanced Nutrition.'
 };
 
 export default function RootLayout({ children }) {
@@ -17,13 +17,11 @@ export default function RootLayout({ children }) {
             <head>
                 <link rel="icon" href="/favicon.svg" sizes="any" />
             </head>
-            <body className="antialiased text-white bg-blue-900">
-                <div className="flex flex-col min-h-screen px-6 bg-noise sm:px-12">
-                    <div className="flex flex-col w-full max-w-5xl mx-auto grow">
-                        <Header />
-                        <main className="grow">{children}</main>
-                        <Footer />
-                    </div>
+            <body className="antialiased text-white bg-[#0a1628]">
+                <div className="flex flex-col min-h-screen">
+                    <Header />
+                    <main className="grow">{children}</main>
+                    <Footer />
                 </div>
             </body>
         </html>
