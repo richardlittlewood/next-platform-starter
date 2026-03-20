@@ -6,49 +6,49 @@ export const metadata = {
 
 const facultyMembers = [
     {
-        name: 'Prof. Eleanor Whitfield',
+        name: 'Prof. E. Whitfield',
         role: 'Director & Professor of Clinical Nutrition',
         bio: 'Professor Whitfield has over 25 years of experience in clinical nutrition research, with a particular focus on dietary interventions for type 2 diabetes and cardiovascular disease. She has led more than 30 randomised controlled trials and published over 200 peer-reviewed papers.',
         expertise: ['Clinical Nutrition', 'Diabetes Management', 'Cardiovascular Health']
     },
     {
-        name: 'Prof. James Okoro',
+        name: 'Prof. J. Okoro',
         role: 'Head of Nutrigenomics & Personalised Nutrition',
         bio: "Professor Okoro is a leading figure in the emerging field of nutrigenomics. His research explores how genetic variation influences nutrient metabolism and dietary requirements. He established SIAN's Centre for Nutrigenomics Research in 2008.",
         expertise: ['Nutrigenomics', 'Personalised Nutrition', 'Genetic Epidemiology']
     },
     {
-        name: 'Dr. Ananya Sharma',
+        name: 'Dr. A. Sharma',
         role: 'Senior Lecturer in Gut Microbiome Science',
         bio: 'Dr. Sharma investigates the intricate relationships between diet, the gut microbiome, and host health. Her award-winning research on dietary fibre and microbiome diversity has been widely cited and has informed national dietary guidelines.',
         expertise: ['Gut Microbiome', 'Dietary Fibre', 'Fermented Foods']
     },
     {
-        name: 'Dr. Marcus Jennings',
+        name: 'Dr. M. Jennings',
         role: 'Reader in Public Health Nutrition',
         bio: 'Dr. Jennings combines epidemiological methods with community-based research to develop and evaluate nutrition interventions at the population level. He advises the World Health Organisation on nutrition policy for low- and middle-income countries.',
         expertise: ['Public Health', 'Nutrition Policy', 'Global Health']
     },
     {
-        name: 'Dr. Sophie Brennan',
+        name: 'Dr. S. Brennan',
         role: 'Senior Lecturer in Sports Nutrition',
         bio: 'Dr. Brennan is a registered sports dietitian and researcher specialising in the nutritional demands of elite athletes. She has worked with national Olympic teams and professional sporting organisations across multiple disciplines.',
         expertise: ['Sports Nutrition', 'Exercise Physiology', 'Body Composition']
     },
     {
-        name: 'Dr. Henrik Larsson',
+        name: 'Dr. H. Larsson',
         role: 'Lecturer in Food Science',
         bio: 'Dr. Larsson researches the health-promoting properties of bioactive compounds found in plant-based foods. His laboratory work on polyphenol bioavailability and antioxidant mechanisms contributes to our understanding of functional foods.',
         expertise: ['Food Science', 'Bioactive Compounds', 'Polyphenols']
     },
     {
-        name: 'Dr. Fatima Al-Rashid',
+        name: 'Dr. F. Al-Rashid',
         role: 'Lecturer in Nutritional Biochemistry',
         bio: 'Dr. Al-Rashid teaches and researches the biochemical mechanisms underlying nutrient metabolism. Her current research focuses on the role of micronutrients in immune function and the metabolic consequences of vitamin D deficiency.',
         expertise: ['Nutritional Biochemistry', 'Micronutrients', 'Immune Function']
     },
     {
-        name: 'Dr. Thomas Chen',
+        name: 'Dr. T. Chen',
         role: 'Research Fellow in Metabolomics',
         bio: 'Dr. Chen applies advanced metabolomics techniques to identify biomarkers of dietary intake and nutritional status. His work aims to develop objective tools for measuring dietary exposure in epidemiological studies.',
         expertise: ['Metabolomics', 'Biomarker Discovery', 'Analytical Chemistry']

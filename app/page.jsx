@@ -7,11 +7,11 @@ export default function Page() {
             <section className="relative overflow-hidden bg-[#F5F7FA] py-16 sm:py-40">
                 <div className="section-container relative z-10 max-md:px-4">
                     <div className="mx-auto max-w-[1000px] text-center">
-                        <span className="inline-block mb-5 rounded-full bg-[#F4A259]/10 px-5 py-2 text-sm font-bold uppercase tracking-wider text-[#F4A259] border border-[#F4A259]/30">
+                        <span className="inline-block mb-5 rounded-full bg-[#E67E22] px-6 py-3 text-sm font-bold uppercase tracking-wider text-white border border-[#E67E22]">
                             Special Focus Meeting
                         </span>
                         <h1 className="mb-8 text-4xl font-medium sm:text-6xl lg:text-7xl text-[#10243E]" style={{ letterSpacing: '0.02em', lineHeight: 1.3 }}>
-                            <span className="text-[#F4A259]">Special Focus Meeting:</span>{' '}β-hydroxybutyrate (BHB) in applied metabolic nutrition
+                            β-hydroxybutyrate (BHB) in applied metabolic nutrition
                         </h1>
                         <div className="flex flex-wrap justify-center gap-3 mb-10">
                             <span className="inline-flex items-center gap-2 rounded-full bg-[#10243E]/5 px-4 py-2 text-sm font-medium text-[#10243E] border border-[#D8E2EC]">
@@ -161,7 +161,7 @@ export default function Page() {
                     <div className="mb-12">
                         <h3 className="text-xl font-bold mb-6 text-[#1B7E82] uppercase tracking-wider text-center">Meeting Chairs</h3>
                         <div className="grid gap-6 sm:grid-cols-3">
-                            <FacultyCard name="Dr. Richard Littlewood" credentials="MA MBA MD" role="Europe Chair" description="Medical Doctor; Inventor of Klario" focus="Clinical applications & regulatory vision for BHB" />
+                            <FacultyCard name="Dr. R. Littlewood" credentials="MD" role="Europe Chair" description="Medical Doctor; Inventor of Klario" focus="Clinical applications & regulatory vision for BHB" />
                             <FacultyCard name="Dr. J. Tsubota" role="Japan Chair" description="International metabolic nutrition" />
                             <FacultyCard name="TBC" role="USA Chair" description="To be confirmed" />
                         </div>
@@ -172,7 +172,7 @@ export default function Page() {
                         <h3 className="text-xl font-bold mb-6 text-[#1B7E82] uppercase tracking-wider text-center">Session Faculty</h3>
                         <div className="grid gap-6 sm:grid-cols-2">
                             <FacultyCard name="G. Myers" role="CEO, Flow Health Science" description="Global BHB regulatory landscape" />
-                            <FacultyCard name="Prof. Dr. David Russell-Jones" role="United Kingdom" description="BHB evidence in diabetes management" />
+                            <FacultyCard name="Prof. Dr. D. Russell-Jones" role="United Kingdom" description="BHB evidence in diabetes management" />
                             <FacultyCard name="Prof. Dr. M. Laffan" role="United Kingdom" description="BHB mechanism of action" />
                         </div>
                     </div>
