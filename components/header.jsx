@@ -12,23 +12,29 @@ const navItems = [
 export function Header() {
     return (
         <div className="w-full bg-white border-b border-[#D8E2EC]">
-            <nav className="flex flex-wrap items-center gap-4 py-3 sm:py-4 section-container">
-                <Link href="/" className="flex items-center gap-4 no-underline hover:opacity-90">
-                    <img src="/images/sian-logo-circular.png" alt="SIAN" width="72" height="72" className="rounded-full object-cover" style={{ background: 'transparent' }} />
-                    <span className="text-lg font-semibold tracking-tight sm:text-2xl lg:text-3xl text-[#10243E] leading-tight whitespace-nowrap" style={{ fontFamily: "var(--font-heading)" }}>Scientific Institute for Advanced Nutrition</span>
-                </Link>
+            <div className="w-full max-w-[1440px] mx-auto px-[5%] sm:px-[10%]">
+                {/* Logo and title row - aligned far left */}
+                <div className="pt-3 sm:pt-4 pb-2">
+                    <Link href="/" className="inline-flex items-center gap-4 no-underline hover:opacity-90">
+                        <img src="/images/sian-logo-circular.png" alt="SIAN" width="72" height="72" className="rounded-full object-cover" style={{ background: 'transparent' }} />
+                        <span className="text-lg font-semibold tracking-tight sm:text-2xl lg:text-3xl text-[#10243E] leading-tight whitespace-nowrap" style={{ fontFamily: "var(--font-heading)" }}>Scientific Institute for Advanced Nutrition</span>
+                    </Link>
+                </div>
+                {/* Navigation row - spans full width */}
                 {!!navItems?.length && (
-                    <ul className="flex flex-wrap gap-x-4 gap-y-1 ml-auto">
-                        {navItems.map((item, index) => (
-                            <li key={index}>
-                                <a href={item.href} className="inline-flex px-1.5 py-1 sm:px-3 sm:py-2 text-sm font-medium no-underline text-[#10243E] hover:text-[#1B7E82] transition-colors">
-                                    {item.linkText}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
+                    <nav className="pb-3 sm:pb-4">
+                        <ul className="flex justify-between w-full list-none m-0 p-0">
+                            {navItems.map((item, index) => (
+                                <li key={index}>
+                                    <a href={item.href} className="inline-flex px-3 py-2 sm:px-5 sm:py-2.5 text-sm font-medium no-underline text-[#10243E] hover:text-[#1B7E82] transition-colors">
+                                        {item.linkText}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
                 )}
-            </nav>
+            </div>
         </div>
     );
 }
