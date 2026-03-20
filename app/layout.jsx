@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
             <head>
                 <link rel="icon" href="/favicon.svg" sizes="any" />
             </head>
-            <body className="antialiased text-white bg-[#0a1628]">
+            <body className="antialiased text-[#F0F2F5] bg-[#0B0E14]">
                 <div className="flex flex-col min-h-screen">
                     <Header />
                     <main className="grow">{children}</main>

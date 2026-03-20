@@ -60,7 +60,7 @@ export default function Page() {
         <div className="flex flex-col gap-12 sm:gap-16">
             <section>
                 <h1 className="mb-6">Our Faculty</h1>
-                <p className="text-lg text-blue-100">
+                <p className="text-lg text-[#9CA3AF]">
                     SIAN&apos;s faculty members are internationally recognised experts in their respective fields. Our team
                     of researchers, educators, and clinicians brings together a wealth of experience across all
                     areas of nutritional science.
@@ -70,11 +70,11 @@ export default function Page() {
             <section className="grid gap-6 md:grid-cols-2">
                 {facultyMembers.map((member, index) => (
                     <Card key={index} title={member.name}>
-                        <p className="text-sm text-primary -mt-2 mb-3">{member.role}</p>
+                        <p className="text-sm text-accent -mt-2 mb-3">{member.role}</p>
                         <p className="text-sm">{member.bio}</p>
                         <div className="flex flex-wrap gap-2 mt-4">
                             {member.expertise.map((tag, i) => (
-                                <span key={i} className="px-2 py-1 text-xs font-medium rounded bg-neutral-100 text-neutral-600">
+                                <span key={i} className="px-2 py-1 text-xs font-medium rounded bg-accent/10 text-accent border border-accent/20">
                                     {tag}
                                 </span>
                             ))}
