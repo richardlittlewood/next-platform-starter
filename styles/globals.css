@@ -9,14 +9,14 @@
             color-mix(in oklab, var(--color-neutral-950) 100%, transparent)
         ),
         url('/images/noise.png');
-    --color-primary: #fcfbd4;
+    --color-primary: #f9f9f1;
     --color-primary-content: #28371c;
-    --color-primary-dark: #f5f4c8;
+    --color-primary-dark: #f0f0e4;
     --color-accent: #fa4f28;
     --color-accent-dim: #e0431f;
     --color-accent-alt: #cbfcff;
-    --color-secondary: #f0efbf;
-    --color-surface: #f7f6ce;
+    --color-secondary: #ededdf;
+    --color-surface: #f5f5eb;
     --color-surface-light: #ffffff;
     --color-header: #28371c;
     --color-text: #28371c;

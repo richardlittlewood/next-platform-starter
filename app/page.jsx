@@ -59,7 +59,7 @@ export default function Page() {
             </section>
 
             {/* About SIAN */}
-            <section id="about-sian" className="py-20 sm:py-28 bg-[#fcfbd4]">
+            <section id="about-sian" className="py-20 sm:py-28 bg-[#f9f9f1]">
                 <div className="section-container">
                     <h2 className="text-3xl font-bold mb-4 text-center sm:text-4xl text-[#28371c]">About SIAN</h2>
                     <p className="text-center text-[#4a5a3c] max-w-3xl mx-auto mb-12 text-lg">
@@ -83,7 +83,7 @@ export default function Page() {
             </section>
 
             {/* About the Meeting */}
-            <section id="about-meeting" className="py-20 sm:py-28 bg-[#f5f4c8]">
+            <section id="about-meeting" className="py-20 sm:py-28 bg-[#f0f0e4]">
                 <div className="section-container">
                     <h2 className="text-3xl font-bold mb-12 text-center sm:text-4xl text-[#28371c]">About the Meeting</h2>
                     <div className="grid gap-8 lg:grid-cols-3">
@@ -144,7 +144,7 @@ export default function Page() {
             </section>
 
             {/* Programme at a Glance */}
-            <section id="programme" className="py-20 sm:py-28 bg-[#fcfbd4]">
+            <section id="programme" className="py-20 sm:py-28 bg-[#f9f9f1]">
                 <div className="section-container">
                     <h2 className="text-3xl font-bold mb-12 text-center sm:text-4xl text-[#28371c]">Programme at a Glance</h2>
                     <div className="space-y-6 max-w-3xl mx-auto">
@@ -171,7 +171,7 @@ export default function Page() {
             </section>
 
             {/* Faculty */}
-            <section id="faculty" className="py-20 sm:py-28 bg-[#f5f4c8]">
+            <section id="faculty" className="py-20 sm:py-28 bg-[#f0f0e4]">
                 <div className="section-container">
                     <h2 className="text-3xl font-bold mb-12 text-center sm:text-4xl text-[#28371c]">Faculty</h2>
 
@@ -197,7 +197,7 @@ export default function Page() {
             </section>
 
             {/* Venue & Format */}
-            <section id="venue" className="py-20 sm:py-28 bg-[#fcfbd4]">
+            <section id="venue" className="py-20 sm:py-28 bg-[#f9f9f1]">
                 <div className="section-container">
                     <h2 className="text-3xl font-bold mb-12 text-center sm:text-4xl text-[#28371c]">Venue & Format</h2>
                     <div className="grid gap-8 md:grid-cols-2">
@@ -252,7 +252,7 @@ export default function Page() {
             </section>
 
             {/* Registration & Contact */}
-            <section id="registration" className="py-20 sm:py-28 bg-[#f5f4c8]">
+            <section id="registration" className="py-20 sm:py-28 bg-[#f0f0e4]">
                 <div className="section-container">
                     <div className="text-center mb-10">
                         <h2 className="text-3xl font-bold mb-6 sm:text-4xl text-[#28371c]">Register Your Interest</h2>
