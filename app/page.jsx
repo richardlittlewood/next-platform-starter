@@ -31,28 +31,14 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="hidden lg:flex justify-center">
-                            <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="opacity-30">
-                                <circle cx="160" cy="160" r="80" stroke="#cbfcff" strokeWidth="1" />
-                                <circle cx="160" cy="160" r="120" stroke="#cbfcff" strokeWidth="0.5" />
-                                <circle cx="160" cy="160" r="155" stroke="#cbfcff" strokeWidth="0.3" />
-                                <circle cx="160" cy="80" r="8" fill="#fa4f28" opacity="0.6" />
-                                <circle cx="230" cy="130" r="6" fill="#cbfcff" opacity="0.5" />
-                                <circle cx="230" cy="190" r="7" fill="#fa4f28" opacity="0.4" />
-                                <circle cx="160" cy="240" r="8" fill="#cbfcff" opacity="0.6" />
-                                <circle cx="90" cy="190" r="6" fill="#fa4f28" opacity="0.5" />
-                                <circle cx="90" cy="130" r="7" fill="#cbfcff" opacity="0.4" />
-                                <circle cx="120" cy="100" r="5" fill="#fa4f28" opacity="0.3" />
-                                <circle cx="200" cy="220" r="5" fill="#cbfcff" opacity="0.3" />
-                                <line x1="160" y1="80" x2="230" y2="130" stroke="#cbfcff" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="230" y1="130" x2="230" y2="190" stroke="#cbfcff" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="230" y1="190" x2="160" y2="240" stroke="#cbfcff" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="160" y1="240" x2="90" y2="190" stroke="#cbfcff" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="90" y1="190" x2="90" y2="130" stroke="#cbfcff" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="90" y1="130" x2="160" y2="80" stroke="#cbfcff" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="160" y1="80" x2="160" y2="240" stroke="#cbfcff" strokeWidth="0.3" opacity="0.3" />
-                                <line x1="90" y1="130" x2="230" y2="190" stroke="#cbfcff" strokeWidth="0.3" opacity="0.3" />
-                                <line x1="230" y1="130" x2="90" y2="190" stroke="#cbfcff" strokeWidth="0.3" opacity="0.3" />
-                            </svg>
+                            <img
+                                src="/images/bhb-cell.png"
+                                alt="Cell with BHB metabolic pathway"
+                                width="420"
+                                height="280"
+                                className="opacity-80"
+                                style={{ mixBlendMode: 'screen', filter: 'brightness(1.1) contrast(1.05)' }}
+                            />
                         </div>
                     </div>
                 </div>
@@ -173,14 +159,20 @@ export default function Page() {
             {/* Faculty */}
             <section id="faculty" className="py-20 sm:py-28 bg-[#f0f0e4]">
                 <div className="section-container">
-                    <h2 className="text-3xl font-bold mb-12 text-center sm:text-4xl text-[#28371c]">Faculty</h2>
+                    <h2 className="text-3xl font-bold mb-4 text-center sm:text-4xl text-[#28371c]">Faculty</h2>
+
+                    {/* Faculty Introduction */}
+                    <p className="text-center text-[#4a5a3c] max-w-3xl mx-auto mb-12 text-lg">
+                        The Scientific Institute for Advanced Nutrition is proud to be guided by a world-class faculty of clinical pioneers, regulatory experts, and breakthrough innovators. Our leadership spans three continents—bringing together deep expertise from Europe, Japan, and the United States to advance thinking and standards for Beta-hydroxybutyrate (BHB) and applied metabolic nutrition.
+                    </p>
 
                     {/* Meeting Chairs */}
                     <div className="mb-12">
                         <h3 className="text-xl font-bold mb-6 text-[#fa4f28] uppercase tracking-wider text-center">Meeting Chairs</h3>
-                        <div className="grid gap-6 sm:grid-cols-2">
-                            <FacultyCard name="R. Littlewood" credentials="MA MBA MD" role="Europe Chair" description="Medical Doctor; Inventor of Klario" focus="Clinical applications & regulatory vision for BHB" />
+                        <div className="grid gap-6 sm:grid-cols-3">
+                            <FacultyCard name="Dr. Richard Littlewood" credentials="MA MBA MD" role="Europe Chair" description="Medical Doctor; Inventor of Klario" focus="Clinical applications & regulatory vision for BHB" />
                             <FacultyCard name="Dr. J. Tsubota" role="Japan Chair" description="International metabolic nutrition" />
+                            <FacultyCard name="TBC" role="USA Chair" description="To be confirmed" />
                         </div>
                     </div>
 
