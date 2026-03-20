@@ -4,9 +4,11 @@ import { Header } from '../components/header';
 
 export const metadata = {
     title: {
-        template: '%s | Netlify',
-        default: 'Netlify Starter'
-    }
+        template: '%s | SIAN',
+        default: 'Scientific Institute of Advanced Nutrition'
+    },
+    description:
+        'The Scientific Institute of Advanced Nutrition (SIAN) is a leading research and education institution dedicated to advancing the science of human nutrition and promoting evidence-based dietary practices.'
 };
 
 export default function RootLayout({ children }) {
