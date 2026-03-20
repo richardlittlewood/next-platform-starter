@@ -4,8 +4,8 @@ export default function Page() {
     return (
         <div>
             {/* Hero Section */}
-            <section className="relative overflow-hidden bg-[#F5F7FA] py-28 sm:py-40">
-                <div className="section-container relative z-10">
+            <section className="relative overflow-hidden bg-[#F5F7FA] py-16 sm:py-40">
+                <div className="section-container relative z-10 max-md:px-4">
                     <div className="mx-auto max-w-[1000px] text-center">
                         <span className="inline-block mb-5 rounded-full bg-[#F4A259]/10 px-5 py-2 text-sm font-bold uppercase tracking-wider text-[#F4A259] border border-[#F4A259]/30">
                             Special Focus Meeting
