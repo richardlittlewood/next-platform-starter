@@ -4,7 +4,7 @@ export default function Page() {
     return (
         <div>
             {/* Hero Section */}
-            <section className="relative overflow-hidden bg-gradient-to-br from-[#0c2d5e] via-[#0e3d6e] to-[#016968] py-16 sm:py-24">
+            <section className="relative overflow-hidden bg-gradient-to-br from-[#166534] via-[#15803d] to-[#16a34a] py-16 sm:py-24">
                 <div className="section-container relative z-10">
                     <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
                         <div>
@@ -32,26 +32,26 @@ export default function Page() {
                         </div>
                         <div className="hidden lg:flex justify-center">
                             <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="opacity-30">
-                                <circle cx="160" cy="160" r="80" stroke="#2bdcd2" strokeWidth="1" />
-                                <circle cx="160" cy="160" r="120" stroke="#2bdcd2" strokeWidth="0.5" />
-                                <circle cx="160" cy="160" r="155" stroke="#2bdcd2" strokeWidth="0.3" />
-                                <circle cx="160" cy="80" r="8" fill="#2bdcd2" opacity="0.6" />
-                                <circle cx="230" cy="130" r="6" fill="#2bdcd2" opacity="0.5" />
-                                <circle cx="230" cy="190" r="7" fill="#2bdcd2" opacity="0.4" />
-                                <circle cx="160" cy="240" r="8" fill="#2bdcd2" opacity="0.6" />
-                                <circle cx="90" cy="190" r="6" fill="#2bdcd2" opacity="0.5" />
-                                <circle cx="90" cy="130" r="7" fill="#2bdcd2" opacity="0.4" />
-                                <circle cx="120" cy="100" r="5" fill="#2bdcd2" opacity="0.3" />
-                                <circle cx="200" cy="220" r="5" fill="#2bdcd2" opacity="0.3" />
-                                <line x1="160" y1="80" x2="230" y2="130" stroke="#2bdcd2" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="230" y1="130" x2="230" y2="190" stroke="#2bdcd2" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="230" y1="190" x2="160" y2="240" stroke="#2bdcd2" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="160" y1="240" x2="90" y2="190" stroke="#2bdcd2" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="90" y1="190" x2="90" y2="130" stroke="#2bdcd2" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="90" y1="130" x2="160" y2="80" stroke="#2bdcd2" strokeWidth="0.5" opacity="0.4" />
-                                <line x1="160" y1="80" x2="160" y2="240" stroke="#2bdcd2" strokeWidth="0.3" opacity="0.3" />
-                                <line x1="90" y1="130" x2="230" y2="190" stroke="#2bdcd2" strokeWidth="0.3" opacity="0.3" />
-                                <line x1="230" y1="130" x2="90" y2="190" stroke="#2bdcd2" strokeWidth="0.3" opacity="0.3" />
+                                <circle cx="160" cy="160" r="80" stroke="#86efac" strokeWidth="1" />
+                                <circle cx="160" cy="160" r="120" stroke="#86efac" strokeWidth="0.5" />
+                                <circle cx="160" cy="160" r="155" stroke="#86efac" strokeWidth="0.3" />
+                                <circle cx="160" cy="80" r="8" fill="#86efac" opacity="0.6" />
+                                <circle cx="230" cy="130" r="6" fill="#86efac" opacity="0.5" />
+                                <circle cx="230" cy="190" r="7" fill="#86efac" opacity="0.4" />
+                                <circle cx="160" cy="240" r="8" fill="#86efac" opacity="0.6" />
+                                <circle cx="90" cy="190" r="6" fill="#86efac" opacity="0.5" />
+                                <circle cx="90" cy="130" r="7" fill="#86efac" opacity="0.4" />
+                                <circle cx="120" cy="100" r="5" fill="#86efac" opacity="0.3" />
+                                <circle cx="200" cy="220" r="5" fill="#86efac" opacity="0.3" />
+                                <line x1="160" y1="80" x2="230" y2="130" stroke="#86efac" strokeWidth="0.5" opacity="0.4" />
+                                <line x1="230" y1="130" x2="230" y2="190" stroke="#86efac" strokeWidth="0.5" opacity="0.4" />
+                                <line x1="230" y1="190" x2="160" y2="240" stroke="#86efac" strokeWidth="0.5" opacity="0.4" />
+                                <line x1="160" y1="240" x2="90" y2="190" stroke="#86efac" strokeWidth="0.5" opacity="0.4" />
+                                <line x1="90" y1="190" x2="90" y2="130" stroke="#86efac" strokeWidth="0.5" opacity="0.4" />
+                                <line x1="90" y1="130" x2="160" y2="80" stroke="#86efac" strokeWidth="0.5" opacity="0.4" />
+                                <line x1="160" y1="80" x2="160" y2="240" stroke="#86efac" strokeWidth="0.3" opacity="0.3" />
+                                <line x1="90" y1="130" x2="230" y2="190" stroke="#86efac" strokeWidth="0.3" opacity="0.3" />
+                                <line x1="230" y1="130" x2="90" y2="190" stroke="#86efac" strokeWidth="0.3" opacity="0.3" />
                             </svg>
                         </div>
                     </div>
@@ -59,10 +59,10 @@ export default function Page() {
             </section>
 
             {/* About SIAN */}
-            <section id="about-sian" className="py-16 sm:py-24 bg-[#0e1f3d]">
+            <section id="about-sian" className="py-16 sm:py-24 bg-[#166534]">
                 <div className="section-container">
                     <h2 className="text-3xl font-bold mb-4 text-center sm:text-4xl">About SIAN</h2>
-                    <p className="text-center text-blue-200 max-w-3xl mx-auto mb-12 text-lg">
+                    <p className="text-center text-green-100 max-w-3xl mx-auto mb-12 text-lg">
                         The Scientific Institute for Advanced Nutrition is an independent body committed to advancing evidence-based metabolic nutrition through rigorous science and clinical translation.
                     </p>
                     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -178,94 +178,71 @@ export default function Page() {
                     {/* Meeting Chairs */}
                     <div className="mb-12">
                         <h3 className="text-xl font-bold mb-6 text-primary uppercase tracking-wider text-center">Meeting Chairs</h3>
-                        <div className="grid gap-6 sm:grid-cols-3">
-                            <FacultyCard name="R. Littlewood" credentials="MA MBA MD" role="Europe Chair" description="Medical Doctor; Inventor of Klario" focus="Clinical applications & regulatory vision for BHB" />
-                            <FacultyCard name="TBC" role="Japan Chair" description="International metabolic nutrition" />
-                            <FacultyCard name="TBC" role="USA Online Chair" description="BHB research and clinical translation" />
-                        </div>
-                    </div>
-
-                    {/* Keynote Speakers */}
-                    <div className="mb-12">
-                        <h3 className="text-xl font-bold mb-6 text-primary uppercase tracking-wider text-center">Keynote Speakers</h3>
                         <div className="grid gap-6 sm:grid-cols-2">
-                            <FacultyCard name="Gary M." credentials="TBC" description="The BHB Journey: past, present, and future" />
-                            <FacultyCard name="D. D&rsquo;Agostino" credentials="PhD, TBC" role="University of South Florida" description="BHB in practice: bench to bedside translation" />
+                            <FacultyCard name="R. Littlewood" credentials="MA MBA MD" role="Europe Chair" description="Medical Doctor; Inventor of Klario" focus="Clinical applications & regulatory vision for BHB" />
+                            <FacultyCard name="Dr. J. Tsubota" role="Japan Chair" description="International metabolic nutrition" />
                         </div>
                     </div>
 
                     {/* Session Faculty */}
-                    <div className="mb-12">
+                    <div>
                         <h3 className="text-xl font-bold mb-6 text-primary uppercase tracking-wider text-center">Session Faculty</h3>
                         <div className="grid gap-6 sm:grid-cols-2">
-                            <FacultyCard name="H. Myers" role="CEO, Flow Health Science" description="Global BHB regulatory landscape" />
-                            <FacultyCard name="Dr. E. Gross" credentials="Suggested" role="Switzerland" description="BHB in migraine treatment" />
+                            <FacultyCard name="G. Myers" role="CEO, Flow Health Science" description="Global BHB regulatory landscape" />
                             <FacultyCard name="Prof. Russell Jones" role="United Kingdom" description="BHB evidence in diabetes management" />
                             <FacultyCard name="Prof. Dr. M. Laffan" role="United Kingdom" description="BHB mechanism of action" />
-                        </div>
-                    </div>
-
-                    {/* Future Science Contributors */}
-                    <div>
-                        <h3 className="text-xl font-bold mb-6 text-primary uppercase tracking-wider text-center">Future Science Contributors</h3>
-                        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                            <FacultyCard name="Kentaro Nishioka" role="Suntory Global Innovation Center Ltd." description="Brain energy metabolism" />
-                            <FacultyCard name="Dominic D&rsquo;Agostino" role="University of South Florida" description="Ketone therapeutics" />
-                            <FacultyCard name="John Newman" role="Buck Institute / UCSF" description="Ageing and BHB signalling" />
-                            <FacultyCard name="Stephen Cunnane" role="University of Sherbrooke" description="Brain ketone metabolism" />
-                            <FacultyCard name="Vishwa Deep Dixit" role="Yale School of Medicine" description="Inflammaging and BHB" />
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Venue & Format */}
-            <section id="venue" className="py-16 sm:py-24 bg-[#0e1f3d]">
+            <section id="venue" className="py-16 sm:py-24 bg-[#166534]">
                 <div className="section-container">
                     <h2 className="text-3xl font-bold mb-12 text-center sm:text-4xl">Venue & Format</h2>
                     <div className="grid gap-8 md:grid-cols-2">
                         <div className="rounded-lg bg-white/5 p-8 backdrop-blur-sm">
                             <h3 className="text-xl font-bold mb-6 text-primary">In-Person</h3>
-                            <ul className="space-y-4 text-blue-100">
+                            <ul className="space-y-4 text-green-100">
                                 <li className="flex items-start gap-3">
-                                    <svg className="w-5 h-5 text-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><circle cx="12" cy="11" r="3" /></svg>
+                                    <svg className="w-5 h-5 text-green-300 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><circle cx="12" cy="11" r="3" /></svg>
                                     <div><strong className="text-white">Location:</strong> Spain (exact venue to be confirmed)</div>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <svg className="w-5 h-5 text-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
+                                    <svg className="w-5 h-5 text-green-300 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
                                     <div><strong className="text-white">Date:</strong> 8 June 2026, afternoon session</div>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <svg className="w-5 h-5 text-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
+                                    <svg className="w-5 h-5 text-green-300 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
                                     <div><strong className="text-white">Time zone:</strong> CEST (Central European Summer Time, UTC+2)</div>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <svg className="w-5 h-5 text-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M12 6v6l4 2" /><circle cx="12" cy="12" r="10" /></svg>
+                                    <svg className="w-5 h-5 text-green-300 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M12 6v6l4 2" /><circle cx="12" cy="12" r="10" /></svg>
                                     <div><strong className="text-white">Start:</strong> 15:00 CEST</div>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <svg className="w-5 h-5 text-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4-4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" /></svg>
+                                    <svg className="w-5 h-5 text-green-300 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4-4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" /></svg>
                                     <div><strong className="text-white">Access:</strong> By invitation, limited capacity</div>
                                 </li>
                             </ul>
                         </div>
                         <div className="rounded-lg bg-white/5 p-8 backdrop-blur-sm">
                             <h3 className="text-xl font-bold mb-6 text-primary">Online Participation</h3>
-                            <ul className="space-y-4 text-blue-100">
+                            <ul className="space-y-4 text-green-100">
                                 <li className="flex items-start gap-3">
-                                    <svg className="w-5 h-5 text-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" /></svg>
+                                    <svg className="w-5 h-5 text-green-300 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" /></svg>
                                     <div><strong className="text-white">Format:</strong> Live-streamed via secure conference platform</div>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <svg className="w-5 h-5 text-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" /></svg>
+                                    <svg className="w-5 h-5 text-green-300 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" /></svg>
                                     <div><strong className="text-white">Interaction:</strong> Full participation including Q&amp;A</div>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <svg className="w-5 h-5 text-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="10" /><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" /></svg>
+                                    <svg className="w-5 h-5 text-green-300 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="10" /><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" /></svg>
                                     <div><strong className="text-white">Time zones:</strong> Optimised for Europe, with accessibility for Japan (evening) and US East Coast (morning)</div>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <svg className="w-5 h-5 text-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                    <svg className="w-5 h-5 text-green-300 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                                     <div><strong className="text-white">Access:</strong> By registration; connection details provided upon confirmation</div>
                                 </li>
                             </ul>
@@ -275,14 +252,14 @@ export default function Page() {
             </section>
 
             {/* Registration & Contact */}
-            <section id="registration" className="py-16 sm:py-24 bg-gradient-to-br from-[#0c2d5e] via-[#0e3d6e] to-[#016968]">
+            <section id="registration" className="py-16 sm:py-24 bg-gradient-to-br from-[#166534] via-[#15803d] to-[#16a34a]">
                 <div className="section-container">
                     <div className="text-center mb-10">
                         <h2 className="text-3xl font-bold mb-6 sm:text-4xl">Register Your Interest</h2>
-                        <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-4">
+                        <p className="text-green-100 text-lg max-w-2xl mx-auto mb-4">
                             This Special Focus Meeting is by invitation with limited capacity.
                         </p>
-                        <p className="text-blue-100 max-w-2xl mx-auto">
+                        <p className="text-green-100 max-w-2xl mx-auto">
                             Complete the form below to register your interest. You will receive further details including programme updates, venue logistics, and formal invitations as they become available.
                         </p>
                     </div>
@@ -307,7 +284,7 @@ function PillarCard({ icon, title, children }) {
         <div className="rounded-lg bg-white/5 p-6 text-center backdrop-blur-sm border border-white/10">
             <div className="text-primary mb-4 flex justify-center">{icons[icon]}</div>
             <h3 className="text-lg font-bold mb-2 text-white">{title}</h3>
-            <p className="text-sm text-blue-200">{children}</p>
+            <p className="text-sm text-green-100">{children}</p>
         </div>
     );
 }

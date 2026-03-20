@@ -14,8 +14,8 @@ export function Header() {
         <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-16 section-container">
             <Link href="/" className="flex items-center gap-3 no-underline hover:opacity-90">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <circle cx="18" cy="18" r="17" stroke="#2bdcd2" strokeWidth="2" />
-                    <path d="M18 6 L18 30 M10 12 Q18 8 26 12 M10 18 Q18 14 26 18 M10 24 Q18 20 26 24" stroke="#2bdcd2" strokeWidth="1.5" strokeLinecap="round" />
+                    <circle cx="18" cy="18" r="17" stroke="#16a34a" strokeWidth="2" />
+                    <path d="M18 6 L18 30 M10 12 Q18 8 26 12 M10 18 Q18 14 26 18 M10 24 Q18 20 26 24" stroke="#16a34a" strokeWidth="1.5" strokeLinecap="round" />
                 </svg>
                 <span className="text-lg font-bold tracking-tight sm:text-xl text-primary">SIAN</span>
             </Link>
