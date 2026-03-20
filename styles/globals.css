@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 @import 'tailwindcss';
 
@@ -9,33 +9,36 @@
             color-mix(in oklab, var(--color-neutral-950) 100%, transparent)
         ),
         url('/images/noise.png');
-    --color-primary: #f9f9f1;
-    --color-primary-content: #28371c;
-    --color-primary-dark: #f0f0e4;
-    --color-accent: #fa4f28;
-    --color-accent-dim: #e0431f;
-    --color-accent-alt: #cbfcff;
-    --color-secondary: #ededdf;
-    --color-surface: #f5f5eb;
+    --color-primary: #F5F7FA;
+    --color-primary-content: #10243E;
+    --color-primary-dark: #D8E2EC;
+    --color-accent: #F4A259;
+    --color-accent-dim: #e09248;
+    --color-accent-alt: #1B7E82;
+    --color-secondary: #D8E2EC;
+    --color-surface: #F5F7FA;
     --color-surface-light: #ffffff;
-    --color-header: #28371c;
-    --color-text: #28371c;
-    --color-text-secondary: #4a5a3c;
-    --color-text-muted: #6b7b5c;
+    --color-header: #10243E;
+    --color-text: #1F2933;
+    --color-text-secondary: #3E4C59;
+    --color-text-muted: #616E7C;
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
     --font-heading: 'Montserrat', 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-serif: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
 }
 
 @layer base {
     h1 {
         @apply text-4xl font-extrabold tracking-tight sm:text-5xl;
         font-family: var(--font-heading);
+        color: #10243E;
     }
 
     h2 {
         @apply text-2xl font-bold sm:text-3xl;
         font-family: var(--font-heading);
+        color: #10243E;
     }
 
     h3 {
@@ -48,7 +51,7 @@
     }
 
     :not(pre) > code {
-        @apply px-1 py-0.5 font-mono rounded bg-[#28371c]/10 text-[#28371c];
+        @apply px-1 py-0.5 font-mono rounded bg-[#10243E]/10 text-[#10243E];
         font-size: 0.9em;
     }
 }
@@ -74,15 +77,15 @@
 
     .btn {
         @apply inline-flex items-center justify-center gap-2 font-bold text-center no-underline transition-all cursor-pointer;
-        background-color: var(--color-accent);
+        background-color: #F4A259;
         color: #ffffff;
         padding: var(--btn-py, 0.875rem) var(--btn-px, 1.25rem);
         font-size: var(--btn-font-size, 0.875rem);
         border-radius: var(--btn-border-radius, 0.375rem);
 
         &:hover {
-            background-color: var(--color-accent-dim);
-            box-shadow: 0 0 20px rgba(250, 79, 40, 0.3);
+            background-color: #e09248;
+            box-shadow: 0 0 20px rgba(244, 162, 89, 0.3);
         }
 
         &:disabled {
@@ -97,29 +100,30 @@
     }
 
     .btn-white {
-        @apply bg-[#28371c] text-white font-bold backdrop-blur-sm;
-        border: 1px solid rgba(250, 79, 40, 0.3);
+        @apply bg-transparent text-[#1B7E82] font-bold;
+        border: 2px solid #1B7E82;
         &:hover {
-            @apply bg-[#3a4d28];
-            box-shadow: 0 0 20px rgba(250, 79, 40, 0.15);
+            @apply bg-[#1B7E82] text-white;
+            box-shadow: 0 0 20px rgba(27, 126, 130, 0.2);
         }
     }
 
     .badge {
         @apply inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-full;
+        font-variant: small-caps;
     }
-    .badge-keynote { background: rgba(250, 79, 40, 0.1); color: #fa4f28; border: 1px solid rgba(250, 79, 40, 0.3); }
-    .badge-regulatory { background: rgba(96, 165, 250, 0.1); color: #3b82f6; border: 1px solid rgba(96, 165, 250, 0.3); }
-    .badge-industry { background: rgba(203, 252, 255, 0.3); color: #28371c; border: 1px solid rgba(203, 252, 255, 0.6); }
-    .badge-clinical { background: rgba(251, 113, 133, 0.1); color: #e11d48; border: 1px solid rgba(251, 113, 133, 0.3); }
-    .badge-future { background: rgba(192, 132, 252, 0.1); color: #7c3aed; border: 1px solid rgba(192, 132, 252, 0.3); }
+    .badge-keynote { background: rgba(27, 126, 130, 0.08); color: #1B7E82; border: 1px solid rgba(27, 126, 130, 0.2); }
+    .badge-regulatory { background: rgba(27, 126, 130, 0.08); color: #1B7E82; border: 1px solid rgba(27, 126, 130, 0.2); }
+    .badge-industry { background: rgba(27, 126, 130, 0.08); color: #1B7E82; border: 1px solid rgba(27, 126, 130, 0.2); }
+    .badge-clinical { background: rgba(27, 126, 130, 0.08); color: #1B7E82; border: 1px solid rgba(27, 126, 130, 0.2); }
+    .badge-future { background: rgba(27, 126, 130, 0.08); color: #1B7E82; border: 1px solid rgba(27, 126, 130, 0.2); }
 
     .section-container {
         @apply w-full max-w-[1440px] mx-auto px-[5%] sm:px-[10%];
     }
 
     .input {
-        @apply px-4 py-3 text-sm rounded-md bg-white/80 text-[#28371c] border border-[#28371c]/15 focus:border-accent focus:outline-3 focus:outline-accent/30 placeholder:text-[#28371c]/40;
+        @apply px-4 py-3 text-sm rounded-md bg-white/80 text-[#1F2933] border border-[#D8E2EC] focus:border-[#1B7E82] focus:outline-3 focus:outline-[#1B7E82]/30 placeholder:text-[#1F2933]/40;
     }
 
     .diff {
