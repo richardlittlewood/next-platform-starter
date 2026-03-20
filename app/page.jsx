@@ -4,41 +4,32 @@ export default function Page() {
     return (
         <div>
             {/* Hero Section */}
-            <section className="relative overflow-hidden bg-[#F5F7FA] py-20 sm:py-32">
+            <section className="relative overflow-hidden bg-[#F5F7FA] py-28 sm:py-40">
                 <div className="section-container relative z-10">
-                    <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-                        <div>
-                            <h1 className="mb-6 text-3xl font-extrabold tracking-tight sm:text-5xl leading-tight text-[#10243E]">
-                                <span className="text-[#1B7E82]">Special Focus Meeting:</span>{' '}Beta-hydroxybutyrate (BHB) in Applied Metabolic Nutrition
-                            </h1>
-                            <div className="flex flex-wrap gap-3 mb-8">
-                                <span className="inline-flex items-center gap-2 rounded-full bg-[#10243E]/5 px-4 py-2 text-sm font-medium text-[#10243E] border border-[#D8E2EC]">
-                                    <svg className="w-4 h-4 text-[#1B7E82]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
-                                    8 June 2026
-                                </span>
-                                <span className="inline-flex items-center gap-2 rounded-full bg-[#10243E]/5 px-4 py-2 text-sm font-medium text-[#10243E] border border-[#D8E2EC]">
-                                    <svg className="w-4 h-4 text-[#1B7E82]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
-                                    Afternoon session from 15:00 CEST
-                                </span>
-                                <span className="inline-flex items-center gap-2 rounded-full bg-[#10243E]/5 px-4 py-2 text-sm font-medium text-[#10243E] border border-[#D8E2EC]">
-                                    <svg className="w-4 h-4 text-[#1B7E82]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><circle cx="12" cy="11" r="3" /></svg>
-                                    Spain (On-site) &middot; Hybrid Online
-                                </span>
-                            </div>
-                            <div className="flex flex-wrap gap-4">
-                                <a href="#programme" className="btn btn-lg">View Scientific Programme</a>
-                                <a href="#registration" className="btn btn-lg btn-white">Register Interest</a>
-                            </div>
+                    <div className="mx-auto max-w-[1000px] text-center">
+                        <span className="inline-block mb-5 rounded-full bg-[#F4A259]/10 px-5 py-2 text-sm font-bold uppercase tracking-wider text-[#F4A259] border border-[#F4A259]/30">
+                            Special Focus Meeting
+                        </span>
+                        <h1 className="mb-8 text-4xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl leading-tight text-[#10243E]">
+                            Beta-hydroxybutyrate (BHB) in Applied Metabolic Nutrition
+                        </h1>
+                        <div className="flex flex-wrap justify-center gap-3 mb-10">
+                            <span className="inline-flex items-center gap-2 rounded-full bg-[#10243E]/5 px-4 py-2 text-sm font-medium text-[#10243E] border border-[#D8E2EC]">
+                                <svg className="w-4 h-4 text-[#1B7E82]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
+                                8 June 2026
+                            </span>
+                            <span className="inline-flex items-center gap-2 rounded-full bg-[#10243E]/5 px-4 py-2 text-sm font-medium text-[#10243E] border border-[#D8E2EC]">
+                                <svg className="w-4 h-4 text-[#1B7E82]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
+                                Afternoon session from 15:00 CEST
+                            </span>
+                            <span className="inline-flex items-center gap-2 rounded-full bg-[#10243E]/5 px-4 py-2 text-sm font-medium text-[#10243E] border border-[#D8E2EC]">
+                                <svg className="w-4 h-4 text-[#1B7E82]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><circle cx="12" cy="11" r="3" /></svg>
+                                Spain (On-site) &middot; Hybrid Online
+                            </span>
                         </div>
-                        <div className="hidden lg:flex justify-center">
-                            <img
-                                src="/images/bhb-cell.png"
-                                alt="Cell with BHB metabolic pathway"
-                                width="420"
-                                height="280"
-                                className="opacity-90"
-                                style={{ mixBlendMode: 'multiply', filter: 'brightness(1.05) contrast(1.02)' }}
-                            />
+                        <div className="flex flex-wrap justify-center gap-4">
+                            <a href="#programme" className="btn btn-lg">View Scientific Programme</a>
+                            <a href="#registration" className="btn btn-lg btn-white">Register Interest</a>
                         </div>
                     </div>
                 </div>
