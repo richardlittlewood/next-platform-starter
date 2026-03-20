@@ -16,7 +16,7 @@ export function Footer() {
                             <li><a href="#about-meeting" className="no-underline text-blue-200 hover:text-white transition-colors">About the Meeting</a></li>
                             <li><a href="#programme" className="no-underline text-blue-200 hover:text-white transition-colors">Scientific Programme</a></li>
                             <li><a href="#faculty" className="no-underline text-blue-200 hover:text-white transition-colors">Faculty</a></li>
-                            <li><a href="#registration" className="no-underline text-blue-200 hover:text-white transition-colors">Registration & Contact</a></li>
+                            <li><a href="#registration" className="no-underline text-blue-200 hover:text-white transition-colors">Register Interest</a></li>
                         </ul>
                     </div>
                     <div>

@@ -6,7 +6,7 @@ const navItems = [
     { linkText: 'Scientific Programme', href: '#programme' },
     { linkText: 'Faculty', href: '#faculty' },
     { linkText: 'Venue & Format', href: '#venue' },
-    { linkText: 'Registration & Contact', href: '#registration' }
+    { linkText: 'Register Interest', href: '#registration' }
 ];
 
 export function Header() {

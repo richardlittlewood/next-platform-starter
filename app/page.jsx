@@ -1,3 +1,5 @@
+import { RegistrationForm } from '../components/registration-form';
+
 export default function Page() {
     return (
         <div>
@@ -274,26 +276,18 @@ export default function Page() {
 
             {/* Registration & Contact */}
             <section id="registration" className="py-16 sm:py-24 bg-gradient-to-br from-[#0c2d5e] via-[#0e3d6e] to-[#016968]">
-                <div className="section-container text-center">
-                    <h2 className="text-3xl font-bold mb-6 sm:text-4xl">Registration & Contact</h2>
-                    <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-4">
-                        This Special Focus Meeting is by invitation with limited capacity.
-                    </p>
-                    <p className="text-blue-100 max-w-2xl mx-auto mb-8">
-                        Register your interest to receive further details, including programme updates, venue logistics, and formal invitations as they become available.
-                    </p>
-                    <div className="mb-12">
-                        <a href="mailto:info@sian-nutrition.org" className="btn btn-lg">
-                            Contact: info@sian-nutrition.org
-                        </a>
+                <div className="section-container">
+                    <div className="text-center mb-10">
+                        <h2 className="text-3xl font-bold mb-6 sm:text-4xl">Register Your Interest</h2>
+                        <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-4">
+                            This Special Focus Meeting is by invitation with limited capacity.
+                        </p>
+                        <p className="text-blue-100 max-w-2xl mx-auto">
+                            Complete the form below to register your interest. You will receive further details including programme updates, venue logistics, and formal invitations as they become available.
+                        </p>
                     </div>
-                    <div className="max-w-md mx-auto">
-                        <p className="text-sm text-blue-200 mb-4">Receive programme updates and announcements directly.</p>
-                        <form name="newsletter" method="POST" data-netlify="true" className="flex gap-2">
-                            <input type="hidden" name="form-name" value="newsletter" />
-                            <input type="email" name="email" placeholder="Your email address" required className="input flex-1" />
-                            <button type="submit" className="btn">Subscribe</button>
-                        </form>
+                    <div className="max-w-2xl mx-auto">
+                        <RegistrationForm />
                     </div>
                 </div>
             </section>
