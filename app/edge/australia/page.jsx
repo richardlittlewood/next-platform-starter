@@ -1,7 +1,8 @@
 import EdgeFunctionExplainer from '../explainer';
 
 export const metadata = {
-    title: 'In Australia'
+    title: 'In Australia',
+    description: 'Edge Function geo-routing detected an Australian visitor'
 };
 
 export default function Page() {

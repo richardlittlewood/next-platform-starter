@@ -4,7 +4,8 @@ import { Markdown } from 'components/markdown';
 import { SubmitButton } from 'components/submit-button';
 
 export const metadata = {
-    title: 'On-Demand Revalidation'
+    title: 'On-Demand Revalidation',
+    description: 'On-demand and time-based revalidation with Next.js caching and Netlify fine-grained cache control'
 };
 
 const tagName = 'randomWiki';
