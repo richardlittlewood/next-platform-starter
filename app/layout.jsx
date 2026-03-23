@@ -36,20 +36,11 @@ const siteUrl = process.env.URL || 'https://scientificinstituteadvancednutrition
 export const metadata = {
     metadataBase: new URL(siteUrl),
     title: {
-        template: `%s | ${siteName}`,
-        default: siteName
+        template: '%s | SIAN',
+        default: 'SIAN BHB Meeting 2026 – Special Focus Meeting'
     },
-    description: siteDescription,
-    openGraph: {
-        siteName: siteName,
-        type: 'website'
-    },
-    twitter: {
-        card: 'summary'
-    },
-    alternates: {
-        canonical: './'
-    }
+    description:
+        'Special Focus Meeting: Beta-hydroxybutyrate (BHB) in Applied Metabolic Nutrition. 9 June 2026, Spain (Hybrid Online). Organised by the Scientific Institute for Advanced Nutrition.'
 };
 
 export default function RootLayout({ children }) {
@@ -58,13 +49,11 @@ export default function RootLayout({ children }) {
             <head>
                 <link rel="icon" href="/favicon.svg" sizes="any" />
             </head>
-            <body className="antialiased text-white bg-blue-900">
-                <div className="flex flex-col min-h-screen px-6 bg-noise sm:px-12">
-                    <div className="flex flex-col w-full max-w-5xl mx-auto grow">
-                        <Header />
-                        <main className="grow">{children}</main>
-                        <Footer />
-                    </div>
+            <body className="antialiased text-[#1F2933] bg-[#F5F7FA]">
+                <div className="flex flex-col min-h-screen">
+                    <Header />
+                    <main className="grow">{children}</main>
+                    <Footer />
                 </div>
             </body>
         </html>
