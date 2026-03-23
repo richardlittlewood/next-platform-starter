@@ -2,7 +2,8 @@ import { ContextAlert } from 'components/context-alert';
 import { Markdown } from 'components/markdown';
 
 export const metadata = {
-    title: 'Middleware'
+    title: 'Middleware',
+    description: 'Next.js Middleware for security headers, request logging, and path protection'
 };
 
 const explainer = `

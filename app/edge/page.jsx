@@ -1,7 +1,8 @@
 import { Markdown } from 'components/markdown';
 
 export const metadata = {
-    title: 'Fallback'
+    title: 'Fallback',
+    description: 'Netlify Edge Functions for geography-based URL rewriting and request transformation'
 };
 
 const explainer = `

@@ -2,7 +2,8 @@ import { FeedbackForm } from 'components/feedback-form';
 import { Markdown } from 'components/markdown';
 
 export const metadata = {
-    title: 'Classics'
+    title: 'Classics',
+    description: 'Classic Netlify features like Forms that work with modern frameworks including Next.js'
 };
 
 const explainer = `

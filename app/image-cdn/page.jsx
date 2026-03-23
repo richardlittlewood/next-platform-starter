@@ -5,7 +5,8 @@ import { Markdown } from 'components/markdown';
 import { getNetlifyContext } from 'utils';
 
 export const metadata = {
-    title: 'Image CDN'
+    title: 'Image CDN',
+    description: 'Netlify Image CDN for automatic image optimization with next/image and responsive images'
 };
 
 const sampleImage = '/images/corgi.jpg';

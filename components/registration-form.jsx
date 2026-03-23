@@ -1,86 +1,66 @@
 'use client';
 
 import { useState } from 'react';
-import { Alert } from './alert';
 
 export function RegistrationForm() {
-    const [status, setStatus] = useState(null);
-    const [error, setError] = useState(null);
+    const [submitted, setSubmitted] = useState(false);
 
-    const handleFormSubmit = async (event) => {
-        event.preventDefault();
-        try {
-            setStatus('pending');
-            setError(null);
-            const myForm = event.target;
-            const formData = new FormData(myForm);
-            const res = await fetch('/__forms.html', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams(formData).toString()
-            });
-            if (res.status === 200) {
-                setStatus('ok');
-                myForm.reset();
-            } else {
-                setStatus('error');
-                setError(`${res.status} ${res.statusText}`);
-            }
-        } catch (e) {
-            setStatus('error');
-            setError(`${e}`);
-        }
-    };
+    if (submitted) {
+        return (
+            <div className="rounded-lg bg-white/60 p-8 border border-[#28371c]/10 text-center">
+                <h3 className="text-xl font-bold mb-2 text-[#28371c]">Thank you for your interest</h3>
+                <p className="text-[#4a5a3c]">
+                    We have received your registration. You will receive further details as they become available.
+                </p>
+            </div>
+        );
+    }
 
     return (
-        <form name="registration" onSubmit={handleFormSubmit} className="flex flex-col gap-4 text-left">
+        <form
+            name="registration"
+            method="POST"
+            data-netlify="true"
+            onSubmit={(e) => {
+                e.preventDefault();
+                const form = e.target;
+                fetch('/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(new FormData(form)).toString(),
+                })
+                    .then(() => setSubmitted(true))
+                    .catch(() => alert('Something went wrong. Please try again.'));
+            }}
+            className="rounded-lg bg-white/60 p-8 border border-[#28371c]/10 space-y-6"
+        >
             <input type="hidden" name="form-name" value="registration" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid gap-6 sm:grid-cols-2">
                 <div>
-                    <label htmlFor="reg-name" className="block text-sm font-medium text-[#3E4C59] mb-1">Full Name *</label>
-                    <input id="reg-name" name="name" type="text" placeholder="Dr. Jane Smith" required className="input w-full" />
+                    <label htmlFor="firstName" className="block text-sm font-medium text-[#28371c] mb-1">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required className="w-full rounded-md border border-[#28371c]/20 bg-white px-3 py-2 text-sm text-[#28371c] focus:outline-none focus:ring-2 focus:ring-[#fa4f28]/40" />
                 </div>
                 <div>
-                    <label htmlFor="reg-email" className="block text-sm font-medium text-[#3E4C59] mb-1">Email Address *</label>
-                    <input id="reg-email" name="email" type="email" placeholder="jane.smith@example.com" required className="input w-full" />
-                </div>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                    <label htmlFor="reg-organisation" className="block text-sm font-medium text-[#3E4C59] mb-1">Organisation / Affiliation *</label>
-                    <input id="reg-organisation" name="organisation" type="text" placeholder="University of..." required className="input w-full" />
-                </div>
-                <div>
-                    <label htmlFor="reg-role" className="block text-sm font-medium text-[#3E4C59] mb-1">Role / Position</label>
-                    <input id="reg-role" name="role" type="text" placeholder="e.g. Professor, Researcher" className="input w-full" />
+                    <label htmlFor="lastName" className="block text-sm font-medium text-[#28371c] mb-1">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required className="w-full rounded-md border border-[#28371c]/20 bg-white px-3 py-2 text-sm text-[#28371c] focus:outline-none focus:ring-2 focus:ring-[#fa4f28]/40" />
                 </div>
             </div>
             <div>
-                <label htmlFor="reg-attendance" className="block text-sm font-medium text-[#3E4C59] mb-1">Preferred Attendance *</label>
-                <select id="reg-attendance" name="attendance" required className="input w-full">
-                    <option value="">Select an option</option>
-                    <option value="in-person">In-Person (Bilbao, Spain)</option>
+                <label htmlFor="email" className="block text-sm font-medium text-[#28371c] mb-1">Email</label>
+                <input type="email" id="email" name="email" required className="w-full rounded-md border border-[#28371c]/20 bg-white px-3 py-2 text-sm text-[#28371c] focus:outline-none focus:ring-2 focus:ring-[#fa4f28]/40" />
+            </div>
+            <div>
+                <label htmlFor="organisation" className="block text-sm font-medium text-[#28371c] mb-1">Organisation</label>
+                <input type="text" id="organisation" name="organisation" className="w-full rounded-md border border-[#28371c]/20 bg-white px-3 py-2 text-sm text-[#28371c] focus:outline-none focus:ring-2 focus:ring-[#fa4f28]/40" />
+            </div>
+            <div>
+                <label htmlFor="attendance" className="block text-sm font-medium text-[#28371c] mb-1">Preferred Attendance</label>
+                <select id="attendance" name="attendance" className="w-full rounded-md border border-[#28371c]/20 bg-white px-3 py-2 text-sm text-[#28371c] focus:outline-none focus:ring-2 focus:ring-[#fa4f28]/40">
+                    <option value="in-person">In-Person (Spain)</option>
                     <option value="online">Online</option>
-                    <option value="undecided">Undecided</option>
                 </select>
             </div>
-            <div>
-                <label htmlFor="reg-message" className="block text-sm font-medium text-[#3E4C59] mb-1">Additional Comments</label>
-                <textarea id="reg-message" name="message" rows={3} placeholder="Any questions or additional information..." className="input w-full resize-y" />
-            </div>
-            <button className="btn btn-lg w-full sm:w-auto sm:self-center mt-2" type="submit" disabled={status === 'pending'}>
-                {status === 'pending' ? 'Submitting...' : 'Register Interest'}
-            </button>
-            {status === 'ok' && (
-                <Alert type="success">
-                    Thank you for registering your interest! We will be in touch with further details.
-                </Alert>
-            )}
-            {status === 'error' && (
-                <Alert type="error">
-                    Something went wrong. Please try again or contact us at info@sian-nutrition.org. {error}
-                </Alert>
-            )}
+            <button type="submit" className="btn btn-lg w-full">Submit Registration</button>
         </form>
     );
 }

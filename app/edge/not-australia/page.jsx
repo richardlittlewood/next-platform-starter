@@ -1,7 +1,8 @@
 import EdgeFunctionExplainer from '../explainer';
 
 export const metadata = {
-    title: 'Not Australia'
+    title: 'Not Australia',
+    description: 'Edge Function geo-routing detected a non-Australian visitor'
 };
 
 export default function Page() {
