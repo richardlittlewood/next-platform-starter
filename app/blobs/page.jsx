@@ -4,7 +4,8 @@ import { Markdown } from 'components/markdown';
 import { getNetlifyContext, uploadDisabled } from 'utils';
 
 export const metadata = {
-    title: 'Blobs'
+    title: 'Blobs',
+    description: 'Netlify Blobs object store for JSON, binary, and other data with zero configuration'
 };
 
 const explainer = `

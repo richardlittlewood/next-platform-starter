@@ -4,7 +4,8 @@ import { ContextAlert } from 'components/context-alert';
 import { Markdown } from 'components/markdown';
 
 export const metadata = {
-    title: 'Redirects & Rewrites'
+    title: 'Redirects & Rewrites',
+    description: 'Next.js redirects and rewrites configured in next.config.js with live examples'
 };
 
 const explainer = `
